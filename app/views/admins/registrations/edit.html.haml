@@ -1,0 +1,40 @@
+.AccountPage
+  .AccountPage__title
+    %h3 アカウント編集
+    = link_to "ログアウト", destroy_admin_session_path, method: :delete, class: 'Button'
+    = link_to "トップページに戻る", :back, class: 'Button'
+  .AccountPage__form
+    = form_for(current_admin) do |f|
+      .FormField
+        .FormField__label--normal
+          = f.label :サロン名
+        .FormField__input--normal
+          = f.text_field :name, autofocus: true
+      .FormField
+        .FormField__label--normal
+          = f.label :カテゴリー選択
+        .FormField__input--normal
+          = f.select :category, Admin.categories.keys, {prompt: '選択してください'}
+      .FormField
+        .FormField__label--normal
+          = f.label :所在地
+        .FormField__input--normal
+          = f.select :birth_place, Admin.birth_places.keys, {prompt: '選択してください'}
+      .FormField
+        .FormField__label--normal
+          = f.label :プロフィール
+        .FormField__input--normal
+          = f.text_field :profile
+      .FormField
+        .FormField__label--normal
+          = f.label :メールアドレス
+        .FormField__input--normal
+          = f.email_field :email
+      .FormField
+        .FormField__label--normal
+          .image
+            = image_tag current_admin.image.url, alt: "NoImage"
+          = f.label :プロフィール画像選択
+        .FormField__input--normal
+          = f.file_field :image
+      = f.submit "更新する", class: 'Button UserButton'

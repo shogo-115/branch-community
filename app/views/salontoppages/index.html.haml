@@ -1,0 +1,98 @@
+.main
+  .header
+    .header__header-left
+      .logo
+        Branch Community
+        = icon('fa', 'tree')
+    .header__header-right
+      .search-link
+        = link_to "ユーザー検索はこちらから", "#"
+      .image
+        = image_tag current_admin.image.url, alt: "NoImage"
+      .user-name
+        = current_admin.name 
+        様
+      .icons
+        .icon
+          = link_to edit_admin_registration_path(current_admin) do
+            = icon('fas', 'user')
+  .header-menu
+    %ul.menu-category
+      %li.menu-item
+        =link_to "東京都", "/tokyopage"
+      %li.menu-item
+        =link_to "大阪府", "/osakapage"
+      %li.menu-item
+        =link_to "福岡県", "/fukuokapage"
+      %li.menu-item
+        =link_to "京都府", "/kyotopage"
+      %li.menu-item
+        =link_to "愛知県", "/aichipage"
+      %li.menu-item
+        =link_to "神奈川県", "/kanagawapage"
+      %li.menu-item
+        =link_to "千葉県", "/chibapage"
+      %li.menu-item
+        =link_to "その他", "/otherpage"
+  .new-user-header
+    新着ユーザー
+  .profile-header
+  .profile
+    - @users.each do |user|
+      .image
+        = image_tag user.image.url, alt: "NoImage"
+      【ユーザー名】
+      = user.name
+      %br
+      【性別】
+      = user.sex
+      %br
+      【出身地】
+      = user.birth_place
+      = link_to "=詳細=", user_path(user), method: :get
+  .recommended-user-header
+    お気に入りユーザー
+  .profile-header
+  .profile
+    - @users.each do |user|
+      .image
+        = image_tag user.image.url, alt: "NoImage"
+      【ユーザー名】
+      = user.name
+      %br
+      【性別】
+      = user.sex
+      %br
+      【出身地】
+      = user.birth_place
+      = link_to "=詳細=", user_path(user), method: :get
+  .salon-information-header
+    NEWS
+  %ul.information-menu
+    %li.information-menu-item
+      =link_to "2020年8月21日：【新機能リリース予定！】チャットルーム機能", "＃"
+    %li.information-menu-item
+      =link_to "2020年8月20日：【新機能リリース予定！】いいね！機能", "＃"
+    %li.information-menu-item
+      =link_to "2020年8月19日：【新機能リリース予定！】お気に入りユーザー保存機能", "＃"
+    %li.information-menu-item
+      =link_to "2020年8月18日：【新機能リリース予定！】おすすめユーザー表示機能", "＃"
+    %li.information-menu-item
+      =link_to "2020年8月17日：【新機能リリース予定！】マッチング診断機能", "＃"
+    %li.information-menu-item
+      =link_to "2020年8月16日：【新機能リリース予定！】アクティブユーザー表示機能", "＃"
+    %li.information-menu-item
+      =link_to "2020年7月6日：<<BranchCommunity サービス開始>>", "＃"
+  .footer
+    .footer__top
+      Branch Community
+    %ul.footer-center
+      %li.footer-center-item
+        =link_to "プライバシーポリシー", "＃"
+      %li.footer-center-item
+        =link_to "サイトご利用規約", "＃"
+      %li.footer-center-item
+        =link_to "お問い合わせ", "＃"
+    .footer__bottom
+      Copyright © BranchCommunity, Inc.
+ 

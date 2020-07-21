@@ -1,0 +1,23 @@
+.user-main
+  .user-bg-opacity
+    .user-profile-header
+      プロフィール詳細
+    .user-profile
+      .image
+        = image_tag @user.image.url, alt: "NoImage"
+      %br
+      【ユーザー名】
+      %br
+      = @user.name
+      %br
+      【性別】
+      %br
+      = @user.sex
+      %br
+      【出身地】
+      %br
+      = @user.birth_place
+      %br
+      【プロフィール】
+      %br
+      = @user.profile

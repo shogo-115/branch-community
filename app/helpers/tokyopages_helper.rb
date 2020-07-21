@@ -1,0 +1,2 @@
+module TokyopagesHelper
+end

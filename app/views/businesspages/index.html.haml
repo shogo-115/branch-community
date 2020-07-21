@@ -1,0 +1,23 @@
+.business-salon-main
+  .business-bg-opacity
+    .business-salon-page-header
+      ビジネス
+    .business-salon-profile-header
+      .business-salon-profile
+        - @admins.each do |admin|
+          .image
+            = image_tag admin.image.url, alt: "NoImage"
+          %br
+          【サロン名】
+          = admin.name
+          %br
+          【カテゴリー】
+          = admin.category
+          %br
+          【所在地】
+          = admin.birth_place
+          %br
+          = link_to "=詳細=", admin_path(admin), method: :get
+          %br
+          %br
+          %br

@@ -1,0 +1,2 @@
+module AichipagesHelper
+end

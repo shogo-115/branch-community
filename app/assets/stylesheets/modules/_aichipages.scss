@@ -1,0 +1,41 @@
+.aichi-user-main{
+  height: 100%;
+  width: 100%;
+  background: image-url('aichi-user.jpg');
+  background-size: cover;
+  .aichi-bg-opacity {
+    background: rgba(255,255,255,0.5);
+    height: 100%;
+    .aichi-user-page-header{
+      width: 70%;
+      max-width: 500px;
+      font-size: 20px;
+      background-color: whitesmoke;
+      border: brown solid 2px;
+      border-radius: 10px 10px 10px 10px;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .aichi-user-profile-header{
+      width: 50%;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: 20px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      white-space: nowrap;
+      height: 100%;
+    }
+    .aichi-user-profile{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .image{
+      background: none;
+      margin: 0 auto;
+    }
+  }
+}

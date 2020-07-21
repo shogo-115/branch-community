@@ -1,0 +1,41 @@
+.kanagawa-user-main{
+  height: 100vh;
+  width: 100vw;
+  background: image-url('kanagawa-user.jpg');
+  background-size: cover;
+  .kanagawa-bg-opacity {
+    background: rgba(255,255,255,0.5);
+    height: 100%;
+    .kanagawa-user-page-header{
+      width: 70%;
+      max-width: 500px;
+      font-size: 20px;
+      background-color: whitesmoke;
+      border: blue solid 2px;
+      border-radius: 10px 10px 10px 10px;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .kanagawa-user-profile-header{
+      width: 50%;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: 20px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      white-space: nowrap;
+      height: 100%;
+    }
+    .kanagawa-user-profile{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    .image{
+      background: none;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+module ChibapagesHelper
+end

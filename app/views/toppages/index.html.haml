@@ -1,0 +1,172 @@
+.main
+  .header
+    .header__header-left
+      .logo
+        Branch Community
+        = icon('fa', 'tree')
+    .header__header-right
+      -if user_signed_in?
+        .search-link
+          = link_to "サロン検索はこちらから", "/search"
+        .image
+          = image_tag current_user.image.url, alt: "NoImage"
+        .user-name 
+          = current_user.name 
+          様
+        .icons
+          .icon
+            = link_to edit_user_registration_path(current_user) do
+              = icon('fas', 'user')
+      -else
+        .sign-in-header
+          .sign-in-salon
+            =link_to "サロン運営者様 新規登録・ログイン", "admins/sign_in"
+          .sign-in-user
+            =link_to "ユーザー様 新規登録・ログイン", "users/sign_in"
+  .header-menu
+    %ul.menu-category
+      %li.menu-item
+        =link_to "新着サロン", "/newsalonpage"
+      %li.menu-item
+        =link_to "ビジネス", "/businesspage"
+      %li.menu-item
+        =link_to "スポーツ", "/sportspage"
+      %li.menu-item
+        =link_to "スキルアップ", "/skilluppage"
+      %li.menu-item
+        =link_to "フード・グルメ", "/foodpage"
+      %li.menu-item
+        =link_to "ビューティー", "/beautypage"
+      %li.menu-item
+        =link_to "恋愛・婚活", "/lovepage"
+      %li.menu-item
+        =link_to "副業", "/sidejobpage"
+  .new-salon-header
+    新着サロン
+  .profile-header
+  .profile
+    - @admins.each do |admin|
+      .image
+        = image_tag admin.image.url, alt: "NoImage"
+      【サロン名】
+      = admin.name
+      %br
+      【カテゴリー】
+      = admin.category
+      %br
+      【所在地】
+      = admin.birth_place
+      %br
+      = link_to "=詳細=", admin_path(admin), method: :get
+  -if user_signed_in?
+    .recommended-salon-header
+      お気に入りのサロン
+    .profile-header
+    .profile
+      - @admins.each do |admin|
+        .image
+          = image_tag admin.image.url, alt: "NoImage"
+        【サロン名】
+        = admin.name
+        %br
+        【カテゴリー】
+        = admin.category
+        %br
+        【所在地】
+        = admin.birth_place
+        %br
+        = link_to "=詳細=", admin_path(admin), method: :get
+    .popular-salon-header
+      人気のサロン
+    .profile-header
+    .profile
+      - @admins.each do |admin|
+        .image
+          = image_tag admin.image.url, alt: "NoImage"
+        【サロン名】
+        = admin.name
+        %br
+        【カテゴリー】
+        = admin.category
+        %br
+        【所在地】
+        = admin.birth_place
+        %br
+        = link_to "=詳細=", admin_path(admin), method: :get
+    .information-header
+      NEWS
+    %ul.information-menu
+      %li.information-menu-item
+        =link_to "2020年7月21日：超大物YouTuberがサロンを開設しました！", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月20日：【副業サロン特集！】「あなたも副業始めませんか？」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月19日：【夏のグルメ特集！】「カレーマニアの集い🍛」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月18日：人気芸能人によるメイクアップ勉強会！💄", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月17日：【驚異の成功確率！】「恋活指南部屋❤️」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月16日：【在宅でも減量可能】「ステイホームダイエット」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月6日：<<BranchCommunity サービス開始>>", "＃"
+    .footer
+      .footer__top
+        Branch Community
+      %ul.footer-center
+        %li.footer-center-item
+          =link_to "プライバシーポリシー", "＃"
+        %li.footer-center-item
+          =link_to "サイトご利用規約", "＃"
+        %li.footer-center-item
+          =link_to "お問い合わせ", "＃"
+      .footer__bottom
+        Copyright © BranchCommunity, Inc.
+  -else
+    .popular-salon-header
+      人気のサロン
+    .profile-header
+    .profile
+      - @admins.each do |admin|
+        .image
+          = image_tag admin.image.url, alt: "NoImage"
+        【サロン名】
+        = admin.name
+        %br
+        【カテゴリー】
+        = admin.category
+        %br
+        【所在地】
+        = admin.birth_place
+        %br
+        = link_to "=詳細=", admin_path(admin), method: :get
+    .information-header
+      NEWS
+    %ul.information-menu
+      %li.information-menu-item
+        =link_to "2020年7月21日：超大物YouTuberがサロンを開設しました！", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月20日：【副業サロン特集！】「あなたも副業始めませんか？」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月19日：【夏のグルメ特集！】「カレーマニアの集い🍛」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月18日：人気芸能人によるメイクアップ勉強会！💄", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月17日：【驚異の成功確率！】「恋活指南部屋❤️」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月16日：【在宅でも減量可能】「ステイホームダイエット」", "＃"
+      %li.information-menu-item
+        =link_to "2020年7月6日：<<BranchCommunity サービス開始>>", "＃"
+    .footer
+      .footer__top
+        Branch Community
+        = icon('fa', 'tree')
+      %ul.footer-center
+        %li.footer-center-item
+          =link_to "プライバシーポリシー", "＃"
+        %li.footer-center-item
+          =link_to "サイトご利用規約", "＃"
+        %li.footer-center-item
+          =link_to "お問い合わせ", "＃"
+      .footer__bottom
+        Copyright © BranchCommunity, Inc.

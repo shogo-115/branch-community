@@ -1,0 +1,23 @@
+.tokyo-user-main
+  .tokyo-bg-opacity
+    .tokyo-user-page-header
+      東京都
+    .tokyo-user-profile-header
+      .tokyo-user-profile
+        - @users.each do |user|
+          .image
+            = image_tag user.image.url, alt: "NoImage"
+          %br
+          【ユーザー名】
+          = user.name
+          %br
+          【性別】
+          = user.sex
+          %br
+          【出身地】
+          = user.birth_place
+          %br
+          = link_to "=詳細=", user_path(user), method: :get
+          %br
+          %br
+          %br

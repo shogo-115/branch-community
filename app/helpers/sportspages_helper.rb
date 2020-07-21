@@ -1,0 +1,2 @@
+module SportspagesHelper
+end

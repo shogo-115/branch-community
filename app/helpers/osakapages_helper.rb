@@ -1,0 +1,2 @@
+module OsakapagesHelper
+end

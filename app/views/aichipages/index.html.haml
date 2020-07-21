@@ -1,0 +1,22 @@
+.aichi-user-main
+  .aichi-bg-opacity
+    .aichi-user-page-header
+      愛知県
+    .aichi-user-profile-header
+      .aichi-user-profile
+        - @users.each do |user|
+          .image
+            = image_tag user.image.url, alt: "NoImage"
+          %br
+          【ユーザー名】
+          = user.name
+          【性別】
+          = user.sex
+          %br
+          【出身地】
+          = user.birth_place
+          %br
+          = link_to "=詳細=", user_path(user), method: :get
+          %br
+          %br
+          %br

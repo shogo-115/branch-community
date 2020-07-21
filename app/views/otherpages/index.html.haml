@@ -1,0 +1,23 @@
+.other-user-main
+  .other-bg-opacity
+    .other-user-page-header
+      その他
+    .other-user-profile-header
+      .other-user-profile
+        - @users.each do |user|
+          .image
+            = image_tag user.image.url, alt: "NoImage"
+          %br
+          【ユーザー名】
+          = user.name
+          %br
+          【性別】
+          = user.sex
+          %br
+          【出身地】
+          = user.birth_place
+          %br
+          = link_to "=詳細=", user_path(user), method: :get
+          %br
+          %br
+          %br

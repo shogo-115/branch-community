@@ -1,0 +1,2 @@
+module FukuokapagesHelper
+end
