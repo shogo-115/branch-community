@@ -1,5 +1,5 @@
 # Application Name - アプリ名
-　Branch-Community
+　<b>Branch-Community<b>
 
 # newRead - 概要
   オンラインサロンのマッチングアプリ
