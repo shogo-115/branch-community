@@ -52,6 +52,4 @@ production:
   database: branch_community_production
   username: branch_community
   password: <%= ENV['BRANCH_COMMUNITY_DATABASE_PASSWORD'] %>
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+
