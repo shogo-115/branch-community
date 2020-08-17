@@ -31,7 +31,7 @@
 ・　ユーザー（オンラインサロン）ランキング機能<br>
 　 and more...<br>
   
-# Database Design - DB設計
+# :pencil2:Database Design - DB設計
   
 ## usersテーブル
 |Column|Type|Option|
