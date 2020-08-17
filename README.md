@@ -23,9 +23,11 @@
   開発に至った。<br>
   
 # :iphone: DEMO -  使用方法
+  ## 【トップページ】
   <div align="center">
   <img src="https://i.gyazo.com/dd087063fb74365aaa93d6abd95b89cd.jpg" alt="Image from Gyazo" width="80%">
-  </div>  
+  </div>
+  
   ## 【ユーザー／オンラインサロン登録ページ】<br>
   <div align="center">
   <img src="https://i.gyazo.com/62e3f1ec441b3e262d07c086decfc1df.jpg" alt="Image from Gyazo" width="80%">
@@ -34,7 +36,7 @@
   登録項目を多くし、リッチ化させてユーザー（オンラインサロン）の趣向にマッチしやすくした。<br>
   </div>
   
-  ## 【新着ユーザー／オンラインサロン一覧】<br>
+  ### 【新着ユーザー／オンラインサロン一覧】<br>
   <div align="center">
   <img src="https://i.gyazo.com/45e5e0f72625c84cb443ccd3be1db0c5.gif" alt="Image from Gyazo" width="80%">
   </div>
