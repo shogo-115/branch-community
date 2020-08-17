@@ -28,6 +28,7 @@
   <img src="https://i.gyazo.com/dd087063fb74365aaa93d6abd95b89cd.jpg" alt="Image from Gyazo" width="80%">
   </div>
   
+  
   ## 【ユーザー／オンラインサロン登録ページ】<br>
   <div align="center">
   <img src="https://i.gyazo.com/62e3f1ec441b3e262d07c086decfc1df.jpg" alt="Image from Gyazo" width="80%">
@@ -35,6 +36,7 @@
   <div align="right">
   登録項目を多くし、リッチ化させてユーザー（オンラインサロン）の趣向にマッチしやすくした。<br>
   </div>
+  
   
   ### 【新着ユーザー／オンラインサロン一覧】<br>
   <div align="center">
@@ -44,6 +46,7 @@
   新着順にユーザー（オンラインサロン）を表示し、新鮮な情報で興味を惹き付けるようにした。<br>
   </div>
   
+  
   ## 【ユーザー／オンラインサロン詳細ページ】<br>
   <div align="center">
   <img src="https://i.gyazo.com/b46e300826461175d4b120195de82f44.jpg" alt="Image from Gyazo" width="80%">
@@ -51,6 +54,7 @@
   <div align="right">
   詳細ページでは具体的な情報を掲載し、興味をもってもらえるようにした。<br>
   </div>
+  
   
 # :computer: To be implemented - 実装予定
 ・　チャットルーム機能<br>
