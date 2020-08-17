@@ -34,6 +34,7 @@
   <div align="center">
   <img src="https://i.gyazo.com/45e5e0f72625c84cb443ccd3be1db0c5.gif" alt="Image from Gyazo" width="80%">
   </div>
+  
   【ユーザー／オンラインサロン詳細ページ】<br>
 
 
