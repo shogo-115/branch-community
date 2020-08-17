@@ -23,7 +23,13 @@
   開発に至った。<br>
   
 # :iphone: DEMO -  使用方法
-  [![Image from Gyazo](https://i.gyazo.com/dd087063fb74365aaa93d6abd95b89cd.jpg)](https://gyazo.com/dd087063fb74365aaa93d6abd95b89cd)
+  <img src="https://gyazo.com/dd087063fb74365aaa93d6abd95b89cd" width="60%">
+  【ユーザー／オンラインサロン登録ページ】<br>
+  
+　【新着ユーザー／オンラインサロン一覧】<br>
+　
+　【ユーザー／オンラインサロン詳細ページ】<br>
+
 
 # :computer: To be implemented - 実装予定
 ・　チャットルーム機能<br>
