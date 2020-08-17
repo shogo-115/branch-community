@@ -1,6 +1,6 @@
-# オリジナルアプリ名
-# 概要(このアプリでできることを書いて下さい)
-# 制作背景(意図)
-# DEMO
-# 実装予定の内容
-# DB設計
+# Branch-Community
+# newRead - 概要
+# Production Background - 制作背景
+# DEMO -  使用方法
+# To be implemented　- 実装予定
+# Database Design　- DB設計
