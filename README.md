@@ -27,9 +27,7 @@
   <img src="https://i.gyazo.com/dd087063fb74365aaa93d6abd95b89cd.jpg" alt="Image from Gyazo" width="80%">
   </div>
   【ユーザー／オンラインサロン登録ページ】<br>
-  <div align="center">
   <img src="https://i.gyazo.com/cc38d8a9673bec12bd2386ba866e6558.gif" alt="Image from Gyazo" width="80%">
-  </div>
   【新着ユーザー／オンラインサロン一覧】<br>
   <div align="center">
   <img src="https://i.gyazo.com/45e5e0f72625c84cb443ccd3be1db0c5.gif" alt="Image from Gyazo" width="80%">
