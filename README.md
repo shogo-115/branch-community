@@ -1,10 +1,10 @@
 # Application Name - アプリ名
-　<b>Branch-Community<b>
+　Branch-Community
 
 # newRead - 概要
   オンラインサロンのマッチングアプリ
 
-# Production Background - 制作背景
+# :ledger: Production Background - 制作背景
   【社会背景】<br>
   オンラインで、"心地よいモノ、コト、バ”を求めるニーズが高まっている。<br>
   会員制SNSやオンラインゲーム、マッチングアプリ、UberEatsなどオンライン上で完結する<br>
@@ -22,16 +22,17 @@
   運営側とユーザー側の橋渡し役を果たす、透明性の高いWEBサービスを提供したいと考え、<br>
   開発に至った。<br>
   
-# DEMO -  使用方法
+# :iphone: DEMO -  使用方法
+  [![Image from Gyazo](https://i.gyazo.com/dd087063fb74365aaa93d6abd95b89cd.jpg)](https://gyazo.com/dd087063fb74365aaa93d6abd95b89cd)
 
-# To be implemented - 実装予定
+# :computer: To be implemented - 実装予定
 ・　チャットルーム機能<br>
 ・　おすすめユーザー（オンラインサロン）表示機能<br>
 ・　アクティブユーザー表示機能<br>
 ・　ユーザー（オンラインサロン）ランキング機能<br>
 　 and more...<br>
   
-# :pencil2:Database Design - DB設計
+# :pencil2: Database Design - DB設計
   
 ## usersテーブル
 |Column|Type|Option|
