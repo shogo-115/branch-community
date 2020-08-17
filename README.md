@@ -1,4 +1,5 @@
-# Branch-Community - アプリ名
+# Application Name - アプリ名
+　Branch-Community
 
 # newRead - 概要
   オンラインサロンのマッチングアプリ
@@ -24,5 +25,34 @@
 # DEMO -  使用方法
 
 # To be implemented - 実装予定
-
+・　チャットルーム機能<br>
+・　おすすめユーザー（オンラインサロン）表示機能<br>
+・　アクティブユーザー表示機能<br>
+・　ユーザー（オンラインサロン）ランキング機能<br>
+　 and more...<br>
+  
 # Database Design - DB設計
+  
+## usersテーブル
+|Column|Type|Option|
+|------|----|------|
+|name|string|null: false|
+|birth_place|integer|null: false|
+|sex|integer|null: false|
+|birth_date|date|null: false|
+|category|integer|null: false|
+|profile|text|null: false|
+|email|string|null: false|
+|image|string|null: false|
+|password|string|null: false|
+
+## salonsテーブル
+|Column|Type|Option|
+|------|----|------|
+|name|string|null: false|
+|birth_place|integer|null: false|
+|category|integer|null: false|
+|profile|text|null: false|
+|email|string|null: false|
+|image|string|null: false|
+|password|string|null: false|
