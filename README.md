@@ -23,10 +23,12 @@
   開発に至った。<br>
   
 # :iphone: DEMO -  使用方法
-  <img src="https://i.gyazo.com/dd087063fb74365aaa93d6abd95b89cd.jpg" alt="Image from Gyazo" width="70%">
+  <div align="center">
+  <img src="https://i.gyazo.com/dd087063fb74365aaa93d6abd95b89cd.jpg" alt="Image from Gyazo" width="80%">
+  </div>
   【ユーザー／オンラインサロン登録ページ】<br>
-　【新着ユーザー／オンラインサロン一覧】<br>
-　【ユーザー／オンラインサロン詳細ページ】<br>
+  【新着ユーザー／オンラインサロン一覧】<br>
+  【ユーザー／オンラインサロン詳細ページ】<br>
 
 
 # :computer: To be implemented - 実装予定
