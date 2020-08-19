@@ -1,40 +1,32 @@
-.AccountPage
-  .AccountPage__title
-    %h3 アカウント編集
-    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
-    = link_to "トップページに戻る", :back, class: 'Button'
-  .AccountPage__form
+.accountPage
+  .formContents
     = form_for(current_user) do |f|
-      .FormField
-        .FormField__label--normal
-          = f.label :ユーザー名
-        .FormField__input--normal
-          = f.text_field :name, autofocus: true
-      .FormField
-        .FormField__label--normal
-          = f.label :都道府県
-        .FormField__input--normal
-          = f.select :birth_place, User.birth_places.keys, {prompt: '選択してください'}
-      .FormField
-        .FormField__label--normal
-          = f.label :プロフィール
-        .FormField__input--normal
-          = f.text_field :profile
-      .FormField
-        .FormField__label--normal
-          = f.label :メールアドレス
-        .FormField__input--normal
-          = f.email_field :email
-      .FormField
-        .FormField__label--normal
-          .image
-            = image_tag current_user.image.url, alt: "NoImage"
-          = f.label :アイコン画像選択
-        .FormField__input--normal
+      .formContents__title
+        アカウント編集
+      .formContents__image
+        アイコン画像
+        .imageField
           = f.file_field :image
-      .FormField
-        .FormField__label--normal
-          = f.label :メールアドレス
-        .FormField__input--normal
-          = f.email_field :email
-      = f.submit "更新する", class: 'Button UserButton'
+      .formContents__name
+        ユーザー名
+        .nameField
+          = f.text_field :name, autofocus: true, placeholder: "20文字以内", class: "nameField__text"
+      .formContents__place
+        居住地
+        .placeField
+          = f.select :birth_place, User.birth_places.keys, {prompt: '選択してください'}, class: "placeField__text"
+      .formContents__profile
+        プロフィール
+        .profileField
+          = f.text_area :profile, class: "profileField__text", rows: "7"
+      .formContents__email
+        メールアドレス
+        .emailField
+          = f.email_field :email, class: "emailField__text"
+      .formContents__action
+        .actionField
+          = f.submit "更新する", class: "actionField__button"
+      .formContents__back
+        = link_to "ログアウト", destroy_user_session_path, method: :delete
+        %br
+        = link_to "トップページに戻る", :back
