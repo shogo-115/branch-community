@@ -1,19 +1,20 @@
-.AccountPage
-  .AccountPage__title
-    %h2 Branch Community
-    = render "users/shared/links"
-  .AccountPage__form
+.accountPage
+  .formContents
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .FormField
-        .FormField__label--normal
-          = f.label :メールアドレス
-        .FormField__input--normal
-          = f.email_field :email, autofocus: true
-        .FormField
-          .FormField__label--normal
-            = f.label :パスワード
-            %i (英数字8文字以上)
-          .FormField__input--normal
-            = f.password_field :password, autocomplete: "off"
-        .actions
-          = f.submit "ログイン", class: 'Button UserButton'
+      .formContents__title
+        Branch Community
+      .formContents__email
+        メールアドレス
+        %span 必須
+        .emailField
+          = f.email_field :email, class: "emailField__text"
+      .formContents__password
+        パスワード（英数字8文字以上）
+        %span 必須
+        .passwordField
+          = f.password_field :password, autocomplete: "off", class: "passwordField__text"
+      .formContents__action
+        .actionField
+          = f.submit "ログインする", class: "actionField__button"
+      .formContents__back
+        = render "users/shared/links"
