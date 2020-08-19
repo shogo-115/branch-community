@@ -5,12 +5,10 @@
         Branch Community
       .formContents__email
         メールアドレス
-        %span 必須
         .emailField
           = f.email_field :email, class: "emailField__text"
       .formContents__password
         パスワード（英数字8文字以上）
-        %span 必須
         .passwordField
           = f.password_field :password, autocomplete: "off", class: "passwordField__text"
       .formContents__action
