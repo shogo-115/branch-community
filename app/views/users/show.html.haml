@@ -1,23 +1,31 @@
 .user-main
-  .user-bg-opacity
-    .user-profile-header
-      プロフィール詳細
-    .user-profile
-      .image
+  = render partial: "layouts/salon-header"
+  = render partial: "layouts/user-menu"
+  .user-profile-header
+    プロフィール詳細
+  .user-profile
+    %ul.profileLists
+      %li.profileLists__image
         = image_tag @user.image.url, alt: "NoImage"
-      %br
-      【ユーザー名】
-      %br
-      = @user.name
-      %br
-      【性別】
-      %br
-      = @user.sex
-      %br
-      【出身地】
-      %br
-      = @user.birth_place
-      %br
-      【プロフィール】
-      %br
-      = @user.profile
+      %li.profileLists__name
+        ユーザー名
+        .userName
+          = @user.name
+      %li.profileLists__sex
+        性別
+        .userSex
+          = @user.sex
+      %li.profileLists__birth
+        出身地
+        .userBirth
+          = @user.birth_place
+      %li.profileLists__profile
+        プロフィール
+        .userProfile
+          = @user.profile
+  %ul.buttonLists
+  %li.buttonLists__favorite
+    お気に入り追加
+  %li.buttonLists__message
+    メッセージを送る
+  = render partial: "layouts/footer"
