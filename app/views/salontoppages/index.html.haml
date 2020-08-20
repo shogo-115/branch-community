@@ -7,8 +7,7 @@
     .header__header-right
       .search-link
         = link_to "ユーザー検索はこちらから", "#"
-      .image
-        = image_tag current_admin.image.url, alt: "NoImage"
+      = image_tag current_admin.image.url, alt: "NoImage"
       .user-name
         = current_admin.name 
         様
@@ -19,53 +18,57 @@
   .header-menu
     %ul.menu-category
       %li.menu-item
-        =link_to "東京都", "/tokyopage"
+        =link_to "東京都", tokyopage_path
       %li.menu-item
-        =link_to "大阪府", "/osakapage"
+        =link_to "大阪府", osakapage_path
       %li.menu-item
-        =link_to "福岡県", "/fukuokapage"
+        =link_to "福岡県", fukuokapage_path
       %li.menu-item
-        =link_to "京都府", "/kyotopage"
+        =link_to "京都府", kyotopage_path
       %li.menu-item
-        =link_to "愛知県", "/aichipage"
+        =link_to "愛知県", aichipage_path
       %li.menu-item
-        =link_to "神奈川県", "/kanagawapage"
+        =link_to "神奈川県", kanagawapage_path
       %li.menu-item
-        =link_to "千葉県", "/chibapage"
+        =link_to "千葉県", chibapage_path
       %li.menu-item
-        =link_to "その他", "/otherpage"
+        =link_to "その他", otherpage_path
   .new-user-header
     新着ユーザー
-  .profile-header
   .profile
     - @users.each do |user|
-      .image
+      = link_to user do
         = image_tag user.image.url, alt: "NoImage"
-      【ユーザー名】
-      = user.name
-      %br
-      【性別】
-      = user.sex
-      %br
-      【出身地】
-      = user.birth_place
-      = link_to "=詳細=", user_path(user), method: :get
+        %br
+        【ユーザー名】
+        %br
+        = user.name
+        %br
+        【性別】
+        %br
+        = user.sex
+        %br
+        【出身地】
+        %br
+        = user.birth_place
   .recommended-user-header
     お気に入りユーザー
-  .profile-header
   .profile
     - @users.each do |user|
-      .image
+      = link_to user do
         = image_tag user.image.url, alt: "NoImage"
-      【ユーザー名】
-      = user.name
-      %br
-      【性別】
-      = user.sex
-      %br
-      【出身地】
-      = user.birth_place
-      = link_to "=詳細=", user_path(user), method: :get
+        %br
+        【ユーザー名】
+        %br
+        = user.name
+        %br
+        【性別】
+        %br
+        = user.sex
+        %br
+        【出身地】
+        %br
+        = user.birth_place
   .salon-information-header
     NEWS
   %ul.information-menu
