@@ -1,23 +1,8 @@
 .beauty-salon-main
-  .beauty-bg-opacity
+  = render partial: "layouts/header"
+  = render partial: "layouts/salon-menu"
+  .bg-opacity
     .beauty-salon-page-header
       ビューティー
-    .beauty-salon-profile-header
-      .beauty-salon-profile
-        - @admins.each do |admin|
-          .imege
-            = image_tag admin.image.url, alt: "NoImage"
-          %br
-          【サロン名】
-          = admin.name
-          %br
-          【カテゴリー】
-          = admin.category
-          %br
-          【所在地】
-          = admin.birth_place
-          %br
-          = link_to "=詳細=", admin_path(admin), method: :get
-          %br
-          %br
-          %br
+    = render partial: "layouts/salon-profile"
+    = render partial: "layouts/footer"

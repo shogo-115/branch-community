@@ -1,0 +1,16 @@
+.header
+  .header__header-left
+    .logo
+      Branch Community
+      = icon('fa', 'tree')
+  .header__header-right
+    .search-link
+      = link_to "ユーザー検索はこちらから", "#"
+    = image_tag current_admin.image.url, alt: "NoImage"
+    .user-name
+      = current_admin.name 
+      様
+    .icons
+      .icon
+        = link_to edit_admin_registration_path(current_admin) do
+          = icon('fas', 'user')

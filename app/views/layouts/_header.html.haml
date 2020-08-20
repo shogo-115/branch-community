@@ -1,0 +1,23 @@
+.header
+  .header__header-left
+    .logo
+      Branch Community
+      = icon('fa', 'tree')
+  .header__header-right
+    -if user_signed_in?
+      .search-link
+        = link_to "サロン検索", search_path
+      = image_tag current_user.image.url, alt: "NoImage"
+      .user-name 
+        = current_user.name 
+        様
+      .icons
+        .icon
+          = link_to edit_user_registration_path(current_user) do
+            = icon('fas', 'user')
+    -else
+      .sign-in-header
+        .sign-in-salon
+          =link_to "サロン運営者様 新規登録・ログイン", new_admin_session_path
+        .sign-in-user
+          =link_to "ユーザー様 新規登録・ログイン", new_user_session_path
