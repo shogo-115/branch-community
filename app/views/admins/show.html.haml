@@ -1,23 +1,33 @@
-.admin-main
-  .admin-bg-opacity
-    .admin-profile-header
-      プロフィール詳細
-    .admin-profile
-      .image
+.salon-main
+  = render partial: "layouts/header"
+  = render partial: "layouts/salon-menu"
+  .salon-profile-header
+    プロフィール詳細
+  .salon-profile
+    %ul.profileLists
+      %li.profileLists__image
         = image_tag @admin.image.url, alt: "NoImage"
-      %br
-      【サロン名】
-      %br
-      = @admin.name
-      %br
-      【カテゴリー】
-      %br
-      = @admin.category
-      %br
-      【所在地】
-      %br
-      = @admin.birth_place
-      %br
-      【プロフィール】
-      %br
-      = @admin.profile
+      %li.profileLists__name
+        サロン名
+        .salonName
+          = @admin.name
+      %li.profileLists__category
+        カテゴリー
+        .salonCategory
+          = @admin.category
+      %li.profileLists__birth
+        所在地
+        .salonBirth
+          = @admin.birth_place
+      %li.profileLists__profile
+        プロフィール
+        .salonProfile
+          = @admin.profile
+  %ul.buttonLists
+    %li.buttonLists__favorite
+      お気に入り追加
+    %li.buttonLists__message
+      メッセージを送る
+  .subscriptionButton
+    申し込む！
+  = render partial: "layouts/footer"
