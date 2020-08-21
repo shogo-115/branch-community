@@ -6,8 +6,30 @@
       .formContents__image
         アイコン画像
         %span 必須
-        .imageField
-          = f.file_field :image
+        .imageBox
+          = f.label :image, class: "formImage" do
+            = icon("fa", "camera") 
+            選択
+            = f.file_field :image, class: "imageField"
+        - if @user.image.present?
+          = image_tag @user.image, class: "imgPrev"  
+        - else
+          = image_tag "noimage.png", class: "imgPrev"
+        :javascript
+          $(function() {
+            function readURL(input) {
+              if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+            $('.imgPrev').attr('src', e.target.result);
+              }
+              reader.readAsDataURL(input.files[0]);
+              }
+            }
+            $(".imageField").change(function(){
+              readURL(this);
+            });
+          });
       .formContents__name
         ユーザー名
         %span 必須
