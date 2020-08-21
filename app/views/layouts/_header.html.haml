@@ -12,9 +12,12 @@
         = current_user.name 
         様
       .icons
-        .icon
+        .icons__icon
           = link_to edit_user_registration_path(current_user) do
             = icon('fas', 'user')
+        .icons__icon
+          = link_to admin_salonfavorites_path(current_user) do
+            = icon('fa', 'star')
     -else
       .sign-in-header
         .sign-in-salon

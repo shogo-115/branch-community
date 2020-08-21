@@ -4,9 +4,16 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   
+  has_many :salonfavorites, dependent: :destroy
+  has_many :salonfavorites, through: :salonfavorites, source: :admin
+  has_many :userfavorites, dependent: :destroy
+  has_many :userfavorites, through: :favorites, source: :admin
+
   validates :name, presence: true, uniqueness: true
   validates :profile, length: { maximum: 200 } 
+ 
   mount_uploader :image, ImageUploader
+ 
   enum sex: { 男性:0, 女性:1}
   enum birth_place:{
     北海道:1,青森県:2,岩手県:3,宮城県:4,秋田県:5,山形県:6,福島県:7,

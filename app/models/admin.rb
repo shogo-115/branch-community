@@ -4,12 +4,16 @@ class Admin < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   
-  has_many :entries
-  has_many :direct_messages
-  has_many :rooms, through: :entries
+  has_many :salonfavorites, dependent: :destroy
+  has_many :salonfavorites, through: :salonfavorites, source: :user
+  has_many :userfavorites, dependent: :destroy
+  has_many :userfavorites, through: :favorites, source: :user
+
   validates :name, presence: true, uniqueness: true
   validates :profile, length: { maximum: 500 } 
+  
   mount_uploader :image, ImageUploader
+  
   enum category:{
     ビジネス:1,スポーツ:2,スキルアップ:3,フード・グルメ:4,ビューティー:5,
     恋愛・婚活:6,副業:7

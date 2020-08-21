@@ -1,0 +1,23 @@
+.userFavoritesMain
+  = render partial: "layouts/salon-header"
+  = render partial: "layouts/user-menu"
+  .userFavoritesPageHeader
+    お気に入りのサロン
+  .salonProfileContents
+    - @userfavorites.each do |userfavorite|
+      = link_to user_path(userfavorite.user.id) do
+        = image_tag userfavorite.user.image.url, alt: "NoImage"
+        %br
+        【ユーザー名】
+        %br
+        = userfavorite.user.name
+        %br
+        【性別】
+        %br
+        = userfavorite.user.sex
+        %br
+        【居住地】
+        %br
+        = userfavorite.user.birth_place
+        %br
+  = render partial: "layouts/footer"
