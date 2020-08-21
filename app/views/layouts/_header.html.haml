@@ -5,8 +5,6 @@
       = icon('fa', 'tree')
   .header__header-right
     -if user_signed_in?
-      .search-link
-        = link_to "サロン検索", search_path
       = image_tag current_user.image.url, alt: "NoImage"
       .user-name 
         = current_user.name 
