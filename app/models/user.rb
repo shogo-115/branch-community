@@ -9,8 +9,10 @@ class User < ApplicationRecord
   has_many :userfavorites, dependent: :destroy
   has_many :userfavorites, through: :favorites, source: :admin
 
-  validates :name, presence: true, uniqueness: true
-  validates :profile, length: { maximum: 200 } 
+  validates :name, :sex, :birth_date, :birth_place, :profile, presence: true
+  validates :image, presence: {message:"を1枚追加してください"}
+  validates :name, length: {maximum: 20 , message:"を20文字以内で入力してください"}
+  validates :profile, length: {maximum: 500, message:"を500文字以内で入力してください"}
  
   mount_uploader :image, ImageUploader
  

@@ -3,6 +3,7 @@
     = form_for(current_user) do |f|
       .formContents__title
         アカウント登録情報変更
+      = devise_error_messages!
       .formContents__image
         アイコン画像
         .imageBox
