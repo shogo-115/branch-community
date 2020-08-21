@@ -3,6 +3,7 @@
     = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
       .formContents__title
         新規サロンアカウント作成
+      = devise_error_messages!
       .formContents__image
         アイコン画像
         %span 必須
