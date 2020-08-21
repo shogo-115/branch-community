@@ -1,11 +1,5 @@
-* {
-  box-sizing: border-box;
-}
-
-.main{
-  height: 100%;
-  width: 100%;
-  background-color: whitesmoke;
+.search-salon-main{
+  background-color: rgba(255,255,255,0.5);
   .header{
     height: 150px;
     background-color: rgb(38, 37, 37);
@@ -58,10 +52,9 @@
       }
     }
     .search-link{
-      color: white;
       border: whitesmoke solid 1px;
       border-radius: 15px 15px 15px 15px;
-      padding: 10px;
+      padding: 5px;
       margin-right: 20px;
       a{
         color: white;
@@ -91,7 +84,6 @@
   .header-menu{
     height: 80px;
     background-color: white;
-    margin-bottom: 10px;
     opacity: 0.8;
   }
   .menu-category{
@@ -109,77 +101,31 @@
     background-color: whitesmoke;
     opacity: 0.4;
   }
-  .new-salon-header{
+  .search-salon-page-header{
+    width: 200px;
+    height: 50px;
     font-size: 20px;
-    border-left: lightskyblue solid 5px;
-    padding-left: 2px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    a{
-      text-decoration: none;
-      font-size: 15px;
-      color: black;
-      margin-left: 10px;
-    }
+    background-color: whitesmoke;
+    border: limegreen 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
   }
-  .profile{
-    display: inline-flex;
-    font-size: 15px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    white-space: nowrap;
-    width: 100%;
+  .salonProfileContents{
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
     a{
       text-decoration: none;
       color: black;
-      margin-right: 80px;
       margin-left: 20px;
+      margin-right: 100px;
     }
     img{
       width: 100px;
       height: 100px;
     }
-  }
-  .salon-information-header{
-    width: 70%;
-    max-width: 500px;
-    font-size: 20px;
-    font-family: "Poppins", "Noto Sans Japanese", YuGothic, "-apple-system", "Helvetica Neue", Meiryo, sans-serif;;
-    border-bottom: lightgreen solid 5px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding-bottom: 2px;
-    text-align: center;
-  }
-  .information-header{
-    width: 70%;
-    max-width: 500px;
-    font-size: 20px;
-    font-family: "Poppins", "Noto Sans Japanese", YuGothic, "-apple-system", "Helvetica Neue", Meiryo, sans-serif;;
-    border-bottom: lightskyblue solid 5px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding-bottom: 2px;
-    text-align: center;
-  }
-  .information-menu{
-    margin-bottom: 30px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    white-space: nowrap;
-    height: 100%;
-    text-align: center;
-    a{
-      color: black;
-      text-decoration: none;
-    }
-  }
-  .information-menu-item:hover{
-    background-color:whitesmoke;
-    opacity: 0.4;
-    padding-bottom: 7px;
   }
   .footer{
     background-color: rgb(38, 37, 37);
@@ -188,7 +134,7 @@
       color: white;
       font-size: 20px;
       font-weight: bold;
-      font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+      font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴック", sans-serif;
       padding-top: 10px;
       text-align: center;
     }
@@ -214,17 +160,4 @@
       text-align: center;
     }
   }
-  .new-user-header{
-    font-size: 20px;
-    border-left: lightgreen solid 5px;
-    padding-left: 2px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    a{
-      text-decoration: none;
-      font-size: 15px;
-      color: black;
-      margin-left: 10px;
-    }
-  }
-}
+} 
