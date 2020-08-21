@@ -11,6 +11,9 @@
       = current_admin.name 
       様
     .icons
-      .icon
+      .icons__icon
         = link_to edit_admin_registration_path(current_admin) do
           = icon('fas', 'user')
+      .icons__icon
+        = link_to user_userfavorites_path(current_admin) do
+          = icon('fa', 'star')

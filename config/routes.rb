@@ -10,7 +10,13 @@ Rails.application.routes.draw do
     passwords:     'users/passwords',
     registrations: 'users/registrations'
   }
+  resources :users do
+    resources :userfavorites , only: [:index, :create, :destroy]
+  end
   resources :users, only: [:show, :edit, :update]
+  resources :admins do
+    resources :salonfavorites , only: [:index, :create, :destroy]
+  end
   resources :admins, only: [:show, :edit, :update]
   root 'toppages#index'
   get 'salontoppage', to: 'salontoppages#index'

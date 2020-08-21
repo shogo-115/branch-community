@@ -20,25 +20,8 @@
         【出身地】
         %br
         = user.birth_place
-  .recommended-user-header
-    お気に入りユーザー
-    = link_to "もっと見る >", "#"
-  .profile
-    - @users.each do |user|
-      = link_to user do
-        = image_tag user.image.url, alt: "NoImage"
-        %br
-        【ユーザー名】
-        %br
-        = user.name
-        %br
-        【性別】
-        %br
-        = user.sex
-        %br
-        【出身地】
-        %br
-        = user.birth_place
+
+ 
   = render partial: "layouts/user-information-menu"
   = render partial: "layouts/footer"
  

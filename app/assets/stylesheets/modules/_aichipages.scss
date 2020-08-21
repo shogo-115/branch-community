@@ -73,13 +73,13 @@
       align-items: center;
       justify-content: center;
       margin-right: 20px;
-      a{
-        color: white;
-        text-decoration: none;
+      &__icon{
+        margin-right: 10px;
+        a{
+          color: white;
+          text-decoration: none;
+        }
       }
-    }
-    .icon{
-      margin-right: 10px;
     }
   }
   .header-menu{

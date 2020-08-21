@@ -78,13 +78,13 @@
       align-items: center;
       justify-content: center;
       margin-right: 20px;
-      a{
-        color: white;
-        text-decoration: none;
+      &__icon{
+        margin-right: 10px;
+        a{
+          color: white;
+          text-decoration: none;
+        }
       }
-    }
-    .icon{
-      margin-right: 10px;
     }
   }
   .header-menu{
@@ -140,26 +140,6 @@
       width: 100px;
       height: 100px;
     }
-  }
-  .recommended-salon-header{
-    font-size: 20px;
-    border-left: lightskyblue solid 5px;
-    padding-left: 2px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    a{
-      text-decoration: none;
-      font-size: 15px;
-      color: black;
-      margin-left: 10px;
-    }
-  }
-  .popular-salon-header{
-    font-size: 20px;
-    border-left: lightskyblue solid 5px;
-    padding-left: 2px;
-    margin-left: 10px;
-    margin-bottom: 10px;
   }
   .salon-information-header{
     width: 70%;
@@ -234,19 +214,6 @@
     }
   }
   .new-user-header{
-    font-size: 20px;
-    border-left: lightgreen solid 5px;
-    padding-left: 2px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    a{
-      text-decoration: none;
-      font-size: 15px;
-      color: black;
-      margin-left: 10px;
-    }
-  }
-  .recommended-user-header{
     font-size: 20px;
     border-left: lightgreen solid 5px;
     padding-left: 2px;

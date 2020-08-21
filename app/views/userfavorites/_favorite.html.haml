@@ -1,0 +1,10 @@
+- if Userfavorite.find_by(admin_id: current_admin.id, user_id: user.id)
+  = link_to(user_userfavorite_path(@user, user.id), method: :delete, remote: true) do
+    %li.optionalBtn.already
+      = icon('fa', 'star')
+      お気に入り済み！
+-else 
+  = link_to(user_userfavorites_path(@user), method: :post, remote: true) do
+    %li.optionalBtn.none
+      = icon('fa', 'star')
+      お気に入り追加！ 

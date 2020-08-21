@@ -16,16 +16,19 @@
         .userSex
           = @user.sex
       %li.profileLists__birth
-        出身地
+        居住地
         .userBirth
           = @user.birth_place
       %li.profileLists__profile
         プロフィール
         .userProfile
           = @user.profile
-  %ul.buttonLists
-  %li.buttonLists__favorite
-    お気に入り追加
-  %li.buttonLists__message
-    メッセージを送る
-  = render partial: "layouts/footer"
+  -if admin_signed_in?
+    %ul.buttonLists
+      %li.buttonLists__message
+        メッセージを送る
+    %ul#favoriteBtn
+      = render partial: "userfavorites/favorite", locals: { user: @user}
+    = render partial: "layouts/footer"
+  -else
+    = render partial: "layouts/footer"

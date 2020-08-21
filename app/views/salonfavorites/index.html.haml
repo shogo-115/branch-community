@@ -1,0 +1,23 @@
+.salonFavoritesMain
+  = render partial: "layouts/header"
+  = render partial: "layouts/salon-menu"
+  .salonFavoritesPageHeader
+    お気に入りのサロン
+  .salonProfileContents
+    - @salonfavorites.each do |salonfavorite|
+      = link_to admin_path(salonfavorite.admin.id) do
+        = image_tag salonfavorite.admin.image.url, alt: "NoImage"
+        %br
+        【サロン名】
+        %br
+        = salonfavorite.admin.name
+        %br
+        【カテゴリー】
+        %br
+        = salonfavorite.admin.category
+        %br
+        【所在地】
+        %br
+        = salonfavorite.admin.birth_place
+        %br
+  = render partial: "layouts/footer"
