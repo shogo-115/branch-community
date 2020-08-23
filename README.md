@@ -34,15 +34,21 @@
   <img src="https://user-images.githubusercontent.com/67040383/90971742-ea0a2f80-e54d-11ea-94de-effaa9e319a0.gif" alt="Image from Gyazo" width="80%">
   </div>
   
-  ### 【新着ユーザー／オンラインサロン一覧】<br>
+  ### 【お気に入り機能】<br>
   <div align="center">
-  <img src="" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/90971766-19b93780-e54e-11ea-817a-387eafb218e1.gif" alt="Image from Gyazo" width="80%">
   </div>
   
   ## 【ユーザー／オンラインサロン詳細ページ】<br>
   <div align="center">
   <img src="https://user-images.githubusercontent.com/67040383/90971727-c1823580-e54d-11ea-93d9-64dc28b29c51.png" alt="Image from Gyazo" width="80%">
   </div>
+  
+# Device - 工夫したポイント
+  カテゴリー、所在地、プロフィールから、ユーザーの目的に合うオンラインサロンが見つかるようにしました。<br>
+  デザインは、ユーザーとオンラインサロンが際立つように極力シンプルなものにしました。<br>
+  まだ、未実装ではありますが、今後は相互の疑問解消のため、下記の機能を実装することで、よりオンラインサロンが<br>
+  身近となるように改良していきます。<br>
   
 # :computer: To be implemented - 実装予定
 ・　チャットルーム機能<br>
