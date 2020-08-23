@@ -31,7 +31,7 @@
   
   ## 【ユーザー／オンラインサロン登録ページ】<br>
   <div align="center">
-  <img src="" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/90971742-ea0a2f80-e54d-11ea-94de-effaa9e319a0.gif" alt="Image from Gyazo" width="80%">
   </div>
   
   ### 【新着ユーザー／オンラインサロン一覧】<br>
