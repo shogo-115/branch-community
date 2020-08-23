@@ -11,7 +11,7 @@ class User < ApplicationRecord
 
   validates :name, :sex, :birth_date, :birth_place, :profile, presence: true
   validates :image, presence: {message:"を1枚追加してください"}
-  validates :name, length: {maximum: 20 , message:"を20文字以内で入力してください"}
+  validates :name, length: {maximum: 7 , message:"を7文字以内で入力してください"}
   validates :profile, length: {maximum: 500, message:"を500文字以内で入力してください"}
  
   mount_uploader :image, ImageUploader
