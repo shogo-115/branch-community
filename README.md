@@ -25,7 +25,7 @@
 # :iphone: DEMO -  使用方法
   ## 【トップページ】
   <div align="center">
-  <img src="" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/90971714-9861a500-e54d-11ea-948a-6c98e544c85d.png" alt="Image from Gyazo" width="80%">
   </div>
   
   
