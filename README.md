@@ -10,9 +10,7 @@
   
 # :ledger: Deploy - 本番環境
   IPアドレス：https://branch-community.herokuapp.com/<br>
-  ID/Pass<br>
-    ID: 79b<br>
-    Pass: 7979b<br>
+  <br>
     <br>
   ＜テスト用アカウント＞<br>
   ・ユーザー用<br>
