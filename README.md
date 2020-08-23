@@ -41,7 +41,7 @@
   
   ## 【ユーザー／オンラインサロン詳細ページ】<br>
   <div align="center">
-  <img src="" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/90971727-c1823580-e54d-11ea-93d9-64dc28b29c51.png" alt="Image from Gyazo" width="80%">
   </div>
   
 # :computer: To be implemented - 実装予定
