@@ -36,7 +36,7 @@
   
   ### 【お気に入り機能】<br>
   <div align="center">
-  <img src="https://user-images.githubusercontent.com/67040383/90971766-19b93780-e54e-11ea-817a-387eafb218e1.gif" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/90971972-fee7c280-e54f-11ea-8ca3-8d324491a7ba.gif" alt="Image from Gyazo" width="80%">
   </div>
   
   ## 【ユーザー／オンラインサロン詳細ページ】<br>
