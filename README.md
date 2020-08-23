@@ -4,6 +4,21 @@
 # newRead - 概要
   オンラインサロンのマッチングアプリ
 
+# :ledger: Deploy - 本番環境
+  IPアドレス：https://branch-community.herokuapp.com/<br>
+  ID/Pass<br>
+    ID: 79b<br>
+    Pass: 7979b<br>
+    <br>
+  ＜テスト用アカウント＞<br>
+  ・ユーザー用<br>
+    メールアドレス: user.test@com<br>
+    パスワード: test1234
+  ・オンラインサロン用<br>
+    メールアドレス名: salon.test@com<br>
+    パスワード: test1234
+    <br>
+    
 # :ledger: Production Background - 制作背景
   【社会背景】<br>
   オンラインで、"心地よいモノ、コト、バ”を求めるニーズが高まっている。<br>
