@@ -4,6 +4,10 @@
 # newRead - 概要
   オンラインサロンのマッチングアプリ
 
+# 使用環境
+  Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code<br>
+  <br>
+  
 # :ledger: Deploy - 本番環境
   IPアドレス：https://branch-community.herokuapp.com/<br>
   ID/Pass<br>
