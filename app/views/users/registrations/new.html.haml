@@ -13,7 +13,7 @@
             選択
             = f.file_field :image, class: "imageField"
         - if @user.image.present?
-          = image_tag @user.image, class: "imgPrev"  
+          = image_tag @user.image.url, class: "imgPrev"  
         - else
           = image_tag "noimage.png", class: "imgPrev"
         :javascript
