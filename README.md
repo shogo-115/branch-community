@@ -17,7 +17,7 @@
   ＜テスト用アカウント＞<br>
   ・ユーザー用<br>
     メールアドレス: user.test@com<br>
-    パスワード: test1234
+    パスワード: test1234<br>
   ・オンラインサロン用<br>
     メールアドレス名: salon.test@com<br>
     パスワード: test1234
