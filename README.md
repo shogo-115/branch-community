@@ -14,11 +14,11 @@
     <br>
   ＜テスト用アカウント＞<br>
   ・ユーザー用<br>
-    メールアドレス: user.test@com<br>
+    メールアドレス: test.user@com<br>
     パスワード: test1234<br>
     <br>
   ・オンラインサロン用<br>
-    メールアドレス名: salon.test@com<br>
+    メールアドレス名: test.salon@com<br>
     パスワード: test1234
     <br>
     
