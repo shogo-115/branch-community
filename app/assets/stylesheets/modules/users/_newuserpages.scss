@@ -1,5 +1,5 @@
-.skillupSalonMain {
-  background: image-url('skillup-salon.jpg');
+.newUserMain {
+  background: image-url('new-salon.jpg');
   background-size: cover;
   .header {
     height: 150px;
@@ -97,18 +97,18 @@
   }
   .bgOpacity {
     background: rgba(255,255,255,0.5);
-    .skillupSalonPageHeader {
+    .newUserPageHeader {
       width: 200px;
       height: 50px;
       font-size: 20px;
       background-color: whitesmoke;
-      border: lightseagreen solid 2px;
+      border: lightskyblue solid 2px;
       border-radius: 10px;
       padding: 10px;
       margin: 20px;
       text-align: center;
     }
-    .salonProfileContents {
+    .userProfileContents {
       height: 1000px;
       display: flex;
       flex-wrap: wrap;
