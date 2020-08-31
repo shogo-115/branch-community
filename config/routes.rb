@@ -42,6 +42,4 @@ Rails.application.routes.draw do
   get 'chibapage',    to: 'chibapages#index'
   get 'otherpage',    to: 'otherpages#index'
   
-  get 'form', to: 'admins#index'
-  get 'search', to: 'admins#search'
 end

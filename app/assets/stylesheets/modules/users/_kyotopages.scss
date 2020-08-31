@@ -1,140 +1,133 @@
-.tokyo-user-main{
-  background: image-url('tokyo-user.jpg');
+.kyotoUserMain {
+  background: image-url('kyoto-user.jpg');
   background-size: cover;
-  .header{
+  .header {
     height: 150px;
     background-color: rgb(38, 37, 37);
     display: flex;
     justify-content: space-between;
     border-bottom: white solid 2px;
     opacity: 0.8;
-    &__header-left{
+    &__headerLeft {
       display: flex;
       align-items: center;
     }
-    .logo{
+    .logo {
       color: white;
       font-size: 30px;
       font-weight: bold;
       font-family: "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
       padding-left: 10px;
     }
-    &__header-right{
+    &__headerRight {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .sign-in-header{
+    .signHeader {
       display: flex;
       align-items: center;
       flex-direction: column;
     }
-    .sign-in-salon{
+    .signSalon {
       background-color: burlywood;
       border: 1px solid beige;
       border-radius: 15px 15px 15px 15px ;
       padding: 6px;
       margin-bottom: 10px;
       margin-right: 20px;
-      a{
+      a {
         color: black;
         text-decoration: none;
       }
     } 
-    .sign-in-user{
+    .signUser {
       background-color: cornsilk;
       border:1px solid white;
       border-radius: 15px 15px 15px 15px;
       padding: 6px;
       margin-right: 20px;
-      a{
+      a {
         color: black;
         text-decoration: none;
       }
     }
-    .search-link{
-      border: whitesmoke solid 1px;
-      border-radius: 15px 15px 15px 15px;
-      padding: 5px;
-      margin-right: 20px;
-      a{
-        color: white;
-        text-decoration: none;
-      }
-    }
-    .user-name{
+    .userName {
       color: white;
       font-size: 20px;
       margin-left: 20px;
       margin-right: 10px;
     }
-    .icons{
+    .icons {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-right: 20px;
-      &__icon{
+      &__icon {
         margin-right: 10px;
-        a{
+        a {
           color: white;
           text-decoration: none;
         }
       }
     }
   }
-  .header-menu{
+  .headerMenu {
     height: 80px;
     background-color: white;
     opacity: 0.8;
   }
-  .menu-category{
+  .menuCategory {
     background-color: rgba(230, 228, 176, 0.523);
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    a{
+    &__item {
+      font-size: 16px;
+    }
+    a {
       color: black;
       text-decoration: none;
     }
+    a:hover {
+      background-color: whitesmoke;
+      opacity: 0.4;
+    }
   }
-  .menu-item:hover{
-    background-color: whitesmoke;
-    opacity: 0.4;
-  }
-  .bg-opacity {
+  .bgOpacity {
     background: rgba(255,255,255,0.5);
-    .tokyo-user-page-header{
+    .kyotoUserPageHeader {
       width: 200px;
       height: 50px;
       font-size: 20px;
       background-color: whitesmoke;
-      border: linen solid 2px;
+      border: green solid 2px;
       border-radius: 10px;
       padding: 10px;
       margin: 20px;
       text-align: center;
     }
-    .userProfileContents{
+    .userProfileContents {
       height: 1000px;
       display: flex;
       flex-wrap: wrap;
-      a{
+      a {
         text-decoration: none;
         color: black;
         margin-left: 20px;
         margin-right: 100px;
       }
-      img{
+      img {
         width: 100px;
         height: 100px;
       }
     }
   }
-  .footer{
+  .footer {
     background-color: rgb(38, 37, 37);
     opacity: 0.8;
-    &__top{
+    &__top {
       color: white;
       font-size: 20px;
       font-weight: bold;
@@ -142,23 +135,25 @@
       padding-top: 10px;
       text-align: center;
     }
-    .footer-center{
+    &__center {
       display: flex;
       justify-content: space-around;
       margin-top: 20px;
       margin-bottom: 20px;
-      a{
+      &--item {
+        font-size: 14px;
+        text-align: center;
+      }
+      a {
         color: white;
         text-decoration: none;
       }
+      a:hover {
+        background-color: lightgray;
+        opacity: 0.9;
+      }
     }
-    .footer-center-item:hover{
-      background-color: lightgray;
-      opacity: 0.9;
-      font-size: 14px;
-      text-align: center;
-    }
-    &__bottom{
+    &__bottom {
       color: white;
       font-size: 13px;
       text-align: center;

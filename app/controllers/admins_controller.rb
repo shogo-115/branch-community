@@ -5,11 +5,6 @@ class AdminsController < ApplicationController
     @admins = @q.result(distinct: true)
   end
 
-  def search
-    @q = Admin.search(search_params)
-    @admins = @q.result(distinct: true)
-  end
-
   def show
     @admin = Admin.find(params[:id])
   end
@@ -26,10 +21,6 @@ class AdminsController < ApplicationController
   end
 
   private
-
-  def search_params
-    params.require(:q).permit(:name_cont, :category_eq, :birth_place_eq)
-  end
 
   def admin_params
     params.require(:admin).permit(:name, :category, :birth_place, :profile, :image)

@@ -2,127 +2,117 @@
   box-sizing: border-box;
 }
 
-.main{
+.main {
   height: 100%;
   width: 100%;
   background-color: whitesmoke;
-  .header{
+  .header {
     height: 150px;
     background-color: rgb(38, 37, 37);
     display: flex;
     justify-content: space-between;
     border-bottom: white solid 2px;
     opacity: 0.8;
-    &__header-left{
+    &__headerLeft {
       display: flex;
       align-items: center;
     }
-    .logo{
+    .logo {
       color: white;
       font-size: 30px;
       font-weight: bold;
       font-family: "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
       padding-left: 10px;
     }
-    &__header-right{
+    &__headerRight {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    .sign-in-header{
+    .signHeader {
       display: flex;
       align-items: center;
       flex-direction: column;
     }
-    .sign-in-salon{
+    .signSalon {
       background-color: burlywood;
       border: 1px solid beige;
       border-radius: 15px 15px 15px 15px ;
       padding: 6px;
       margin-bottom: 10px;
       margin-right: 20px;
-      a{
+      a {
         color: black;
         text-decoration: none;
       }
     } 
-    .sign-in-user{
+    .signUser {
       background-color: cornsilk;
       border:1px solid white;
       border-radius: 15px 15px 15px 15px;
       padding: 6px;
       margin-right: 20px;
-      a{
+      a {
         color: black;
         text-decoration: none;
       }
     }
-    .search-link{
-      color: white;
-      border: whitesmoke solid 1px;
-      border-radius: 15px 15px 15px 15px;
-      padding: 10px;
-      margin-right: 20px;
-      a{
-        color: white;
-        text-decoration: none;
-      }
-    }
-    .user-name{
+    .userName {
       color: white;
       font-size: 20px;
       margin-left: 20px;
       margin-right: 10px;
     }
-    .icons{
+    .icons {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-right: 20px;
-      &__icon{
+      &__icon {
         margin-right: 10px;
-        a{
+        a {
           color: white;
           text-decoration: none;
         }
       }
     }
   }
-  .header-menu{
+  .headerMenu {
     height: 80px;
     background-color: white;
-    margin-bottom: 10px;
     opacity: 0.8;
   }
-  .menu-category{
+  .menuCategory {
     background-color: rgba(230, 228, 176, 0.523);
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    a{
+    &__item {
+      font-size: 16px;
+    }
+    a {
       color: black;
       text-decoration: none;
     }
+    a:hover {
+      background-color: whitesmoke;
+      opacity: 0.4;
+    }
   }
-  .menu-item:hover{
-    background-color: whitesmoke;
-    opacity: 0.4;
-  }
-  .new-salon-header{
+  .newSalonHeader {
     font-size: 20px;
     border-left: lightskyblue solid 5px;
     padding-left: 2px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    a{
+    margin: 20px;
+    a {
       text-decoration: none;
       font-size: 15px;
       color: black;
       margin-left: 10px;
     }
   }
-  .profile{
+  .profile {
     display: inline-flex;
     font-size: 15px;
     margin-top: 30px;
@@ -131,18 +121,18 @@
     overflow-x: scroll;
     white-space: nowrap;
     width: 100%;
-    a{
+    a {
       text-decoration: none;
       color: black;
       margin-right: 80px;
       margin-left: 20px;
     }
-    img{
+    img {
       width: 100px;
       height: 100px;
     }
   }
-  .salon-information-header{
+  .salonInformationHeader {
     width: 70%;
     max-width: 500px;
     font-size: 20px;
@@ -153,7 +143,7 @@
     padding-bottom: 2px;
     text-align: center;
   }
-  .information-header{
+  .informationHeader {
     width: 70%;
     max-width: 500px;
     font-size: 20px;
@@ -164,67 +154,58 @@
     padding-bottom: 2px;
     text-align: center;
   }
-  .information-menu{
+  .informationMenu {
     margin-bottom: 30px;
     overflow-y: scroll;
     overflow-x: hidden;
     white-space: nowrap;
     height: 100%;
     text-align: center;
-    a{
+    &__item {
+      padding-bottom: 7px;
+    }
+    a {
       color: black;
       text-decoration: none;
     }
+    a:hover {
+      background-color:whitesmoke;
+      opacity: 0.4;
+    }
   }
-  .information-menu-item:hover{
-    background-color:whitesmoke;
-    opacity: 0.4;
-    padding-bottom: 7px;
-  }
-  .footer{
+  .footer {
     background-color: rgb(38, 37, 37);
     opacity: 0.8;
-    &__top{
+    &__top {
       color: white;
       font-size: 20px;
       font-weight: bold;
-      font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+      font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴック", sans-serif;
       padding-top: 10px;
       text-align: center;
     }
-    .footer-center{
+    &__center {
       display: flex;
       justify-content: space-around;
       margin-top: 20px;
       margin-bottom: 20px;
-      a{
+      &--item {
+        font-size: 14px;
+        text-align: center;
+      }
+      a {
         color: white;
         text-decoration: none;
       }
+      a:hover {
+        background-color: lightgray;
+        opacity: 0.9;
+      }
     }
-    .footer-center-item:hover{
-      background-color: lightgray;
-      opacity: 0.9;
-      font-size: 14px;
-      text-align: center;
-    }
-    &__bottom{
+    &__bottom {
       color: white;
       font-size: 13px;
       text-align: center;
-    }
-  }
-  .new-user-header{
-    font-size: 20px;
-    border-left: lightgreen solid 5px;
-    padding-left: 2px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    a{
-      text-decoration: none;
-      font-size: 15px;
-      color: black;
-      margin-left: 10px;
     }
   }
 }
