@@ -1,9 +1,9 @@
-.user-main
+.userMain
   = render partial: "layouts/salon-header"
   = render partial: "layouts/user-menu"
-  .user-profile-header
+  .userProfileHeader
     プロフィール詳細
-  .user-profile
+  .userProfile
     %ul.profileLists
       %li.profileLists__image
         = image_tag @user.image.url, alt: "NoImage"
@@ -21,7 +21,7 @@
           = @user.birth_place
       %li.profileLists__profile
         プロフィール
-        .userProfile
+        .userInProfile
           = @user.profile
   -if admin_signed_in?
     %ul.buttonLists

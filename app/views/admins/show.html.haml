@@ -1,9 +1,9 @@
-.salon-main
+.salonMain
   = render partial: "layouts/header"
   = render partial: "layouts/salon-menu"
-  .salon-profile-header
+  .salonProfileHeader
     プロフィール詳細
-  .salon-profile
+  .salonProfile
     %ul.profileLists
       %li.profileLists__image
         = image_tag @admin.image.url, alt: "NoImage"
@@ -21,7 +21,7 @@
           = @admin.birth_place
       %li.profileLists__profile
         プロフィール
-        .salonProfile
+        .salonInProfile
           = @admin.profile
   -if user_signed_in?
     %ul.buttonLists

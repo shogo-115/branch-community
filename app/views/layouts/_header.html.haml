@@ -1,12 +1,12 @@
 .header
-  .header__header-left
+  .header__headerLeft
     .logo
       Branch Community
       = icon('fa', 'tree')
-  .header__header-right
+  .header__headerRight
     -if user_signed_in?
       = image_tag current_user.image.url, alt: "NoImage"
-      .user-name 
+      .userName 
         = current_user.name 
         様
       .icons
@@ -17,8 +17,8 @@
           = link_to admin_salonfavorites_path(current_user) do
             = icon('fa', 'star')
     -else
-      .sign-in-header
-        .sign-in-salon
+      .signHeader
+        .signSalon
           =link_to "サロン運営者様 新規登録・ログイン", new_admin_session_path
-        .sign-in-user
+        .signUser
           =link_to "ユーザー様 新規登録・ログイン", new_user_session_path
