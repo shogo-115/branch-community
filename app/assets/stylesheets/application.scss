@@ -1,6 +1,8 @@
 @import "reset";
+
 @import "modules/toppages";
 @import "modules/registers";
+
 @import "modules/salons/newsalonpages";
 @import "modules/salons/businesspages";
 @import "modules/salons/beautypages";
@@ -9,6 +11,9 @@
 @import "modules/salons/sidejobpages";
 @import "modules/salons/skilluppages";
 @import "modules/salons/sportspages";
+@import "modules/salons/salonfavorites";
+
+@import "modules/users/newuserpages";
 @import "modules/users/tokyopages";
 @import "modules/users/osakapages";
 @import "modules/users/fukuokapages";
@@ -19,9 +24,10 @@
 @import "modules/users/otherpages";
 @import "modules/salons/admin-show";
 @import "modules/users/user-show";
-@import "modules/others/favorites";
-@import "modules/salons/salonfavorites";
 @import "modules/users/userfavorites";
+
 @import "modules/others/flash";
+@import "modules/others/favorites";
+
 @import "font-awesome-sprockets";
 @import "font-awesome";

@@ -33,6 +33,7 @@ Rails.application.routes.draw do
   get 'lovepage',     to: 'lovepages#index'
   get 'sidejobpage',  to: 'sidejobpages#index'
   
+  get 'newuserpage',  to: 'newuserpages#index'
   get 'tokyopage',    to: 'tokyopages#index'
   get 'osakapage',    to: 'osakapages#index'
   get 'fukuokapage',  to: 'fukuokapages#index'

@@ -3,21 +3,19 @@
   = render partial: "layouts/user-menu"
   .newUserHeader
     新着ユーザー
-    = link_to "もっと見る >", "#"
+    = link_to "もっと見る >", newuserpage_path
   .profile
     - @users.each do |user|
       = link_to user do
         = image_tag user.image.url, alt: "NoImage"
         %br
-        【ユーザー名】
-        %br
         = user.name
         %br
-        【性別】
+        < 性別 >
         %br
         = user.sex
         %br
-        【出身地】
+        < 居住地 >
         %br
         = user.birth_place
 

@@ -99,15 +99,16 @@
     font-size: 20px;
     border-bottom: lightblue solid 2px;
     margin: 0 auto;
-    margin: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     text-align: center;
   }
   .userProfile {
     width: 500px;
-    height: 800px;
+    height: 900px;
     background-color: white;
-    border: gray solid 2px;
-    border-radius: 10px;
+    box-shadow: 10px 10px 4px lightgrey;
+    border-radius: 15px;
     margin: 0 auto;
     margin-bottom: 50px;
     .profileLists {
@@ -121,7 +122,8 @@
       &__name {
         font-size: 16px;
         padding-left: 20px;
-        border-bottom:gray solid 1px;
+        margin-bottom: 15px;
+        border-bottom: lightsteelblue solid 1px;
         .userName {
           font-size: 20px;
           padding-left: 30px;
@@ -130,7 +132,8 @@
       &__sex {
         font-size: 16px;
         padding-left: 20px;
-        border-bottom:gray solid 1px;
+        margin-bottom: 15px;
+        border-bottom: lightsteelblue solid 1px;
         .userSex {
           font-size: 20px;
           padding-left: 30px;
@@ -139,7 +142,8 @@
       &__birth {
         font-size: 16px;
         padding-left: 20px;
-        border-bottom:gray solid 1px;
+        margin-bottom: 15px;
+        border-bottom: lightsteelblue solid 1px;
         .userBirth {
           font-size: 20px;
           padding-left: 30px;

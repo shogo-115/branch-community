@@ -112,11 +112,17 @@
       height: 1000px;
       display: flex;
       flex-wrap: wrap;
-      a{
+      a {
+        height: 270px;
         text-decoration: none;
         color: black;
+        border: lightskyblue solid 1px;
+        border-radius: 10px;
+        box-shadow: 6px 6px 4px lightgrey;
+        padding: 10px;
+        margin-right: 80px;
         margin-left: 20px;
-        margin-right: 100px;
+        margin-bottom: 10px;
       }
       img{
         width: 100px;
