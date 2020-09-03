@@ -158,34 +158,38 @@
       }
     }
   }
-  .buttonLists {
-    display: flex;
-    justify-content: space-between;
-    &__favorite {
-      width: 250px;
-      height: 60px;
+  .messageBefore {
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    &__button{
       font-size: 25px;
-      color: white;
-      background-color: lightblue;
+      background-color: white;
       border-style: none;
-      border-radius: 10px;
-      padding: 10px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      text-align: center;
+      color: rgb(96, 218, 240);
+      cursor: pointer;
     }
-    &__message {
-      width: 250px;
-      height: 60px;
-      font-size: 25px;
+  }
+  .messageAfter {
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    background-color: lightblue;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    a {
+      text-decoration: none;
       color: white;
-      background-color: lightblue;
-      border-style: none;
-      border-radius: 10px;
-      padding: 10px;
-      margin: 0 auto;
-      margin-bottom: 30px;
-      text-align: center;
     }
   }
   .subscriptionButton {

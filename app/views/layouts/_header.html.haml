@@ -16,6 +16,9 @@
         .icons__icon
           = link_to admin_salonfavorites_path(current_user) do
             = icon('fa', 'star')
+        .icons__icon
+          = link_to rooms_path(current_user) do
+            = icon('fa', 'envelope')
     -else
       .signHeader
         .signSalon

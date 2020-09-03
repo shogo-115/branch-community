@@ -1,0 +1,9 @@
+.userFavoritesMain
+  = render partial: "layouts/header"
+  = render partial: "layouts/salon-menu"
+  .userMessagesPageHeader
+    メッセージ一覧
+  .messageContents
+    - @rooms.each do |room|
+      = link_to "チャットルームへ", room_path(room)
+  = render partial: "layouts/footer"

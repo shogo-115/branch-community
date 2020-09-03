@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'rooms/show'
   get 'messages/index'
   devise_for :admins, controllers: {
     sessions:      'admins/sessions',
@@ -21,6 +22,10 @@ Rails.application.routes.draw do
   end
   resources :admins, only: [:show, :edit, :update]
   
+  resources :rooms, only: [:index, :show, :create] do
+    resources :messages, only: [:create]
+  end
+
   root 'toppages#index'
   
   get 'salontoppage', to: 'salontoppages#index'

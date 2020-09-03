@@ -1,0 +1,125 @@
+.chatMain {
+  background-color: rgb(245, 245, 240);
+  .header {
+    height: 150px;
+    background-color: rgb(38, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: white solid 2px;
+    opacity: 0.8;
+    &__headerLeft {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif;
+      padding-left: 10px;
+    }
+  }
+  .chatContents {
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    &__image {
+      margin-top: 50px;
+      text-align: center;
+      img {
+        width: 80px;
+        height: 80px;
+        border-style: none;
+        border-radius: 30px;
+      }
+    }
+    &__title {
+      font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    &__field {
+      height: 550px;
+      border: rgb(38, 37, 37) solid 1px;
+      border-radius: 20px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      white-space: nowrap;
+    }
+    &__form {
+      margin-top: 15px;
+      .formField {
+        text-align: center;
+        margin-top: 20px;
+        &__text {
+          height: 100px;
+          width: 400px;
+          font-size: 15px;
+          border: rgb(162, 215, 175) 1px solid;
+          border-radius: 10px;
+          padding: 5px;
+          resize: none;
+        }
+      }
+    }
+    &__action {
+      margin: 20px;
+      .actionField {
+        text-align: center;
+        &__text {
+          height: 40px;
+          font-size: 18px;
+          color: black;
+          background-color: burlywood;
+          text-decoration: none;
+          padding: 0 30px;
+          border-style: none;
+          border-radius: 15px;
+          cursor: pointer;
+        }
+        &__text:hover {
+          background-color: burlywood;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: rgb(38, 37, 37);
+    opacity: 0.8;
+    &__top {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: YuGothic, "ヒラギノ角ゴ ProN W3", "Lucida Grande", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Verdana, "ＭＳ Ｐゴック", sans-serif;
+      padding-top: 10px;
+      text-align: center;
+    }
+    &__center {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      &--item {
+        font-size: 14px;
+        text-align: center;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: lightgray;
+        opacity: 0.9;
+      }
+    }
+    &__bottom {
+      color: white;
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}
