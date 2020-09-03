@@ -2,6 +2,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    rooms = current_admin.rooms
+    @user_ids = []
+    rooms.each do |r|
+      @user_ids << r.user_id
+    end
   end
 
   def edit

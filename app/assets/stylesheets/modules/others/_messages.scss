@@ -1,0 +1,31 @@
+.messageContents {
+  margin: 30px;
+  &__leftMessage {
+    width: 250px;
+    background-color: rgb(205, 207, 203);
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 15px;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  &__leftMessageDate {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  &__rightMessage {
+    width: 250px;
+    background-color: rgb(212, 238, 172);
+    margin-left: auto;
+    border-radius: 15px;
+    padding: 15px;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  &__rightMessageDate {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: right;
+  }
+}

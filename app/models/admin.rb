@@ -8,6 +8,7 @@ class Admin < ApplicationRecord
   has_many :salonfavorites, through: :salonfavorites, source: :user
   has_many :userfavorites, dependent: :destroy
   has_many :userfavorites, through: :favorites, source: :user
+  has_many :rooms
 
   validates :name, :category, :birth_place, :profile, presence: true
   validates :image, presence: {message:"を1枚追加してください"}

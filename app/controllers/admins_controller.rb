@@ -1,12 +1,16 @@
 class AdminsController < ApplicationController
 
-  def index
-    @q = Admin.ransack(params[:q])
-    @admins = @q.result(distinct: true)
-  end
-
   def show
-    @admin = Admin.find(params[:id])
+    if user_signed_in?
+      @admin = Admin.find(params[:id])
+      rooms = current_user.rooms
+      @admin_ids = []
+      rooms.each do |r|
+        @admin_ids << r.admin_id
+      end
+    else
+      @admin = Admin.find(params[:id])
+    end
   end
 
   def edit

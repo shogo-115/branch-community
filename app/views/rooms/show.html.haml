@@ -1,0 +1,63 @@
+.chatMain
+  .header
+    .header__headerLeft
+      .logo
+        Branch Community
+        = icon('fa', 'tree')
+  .chatContents
+    - if user_signed_in?
+      .chatContents__image
+        = image_tag @admin.image.url, alt: "NoImage"
+      .chatContents__title
+        = @admin.name
+        とのチャットルーム
+      .chatContents__field
+        - @messages.each do |m|
+          - if m.is_user
+            .messageContents
+              .messageContents__rightMessage
+                = m.content
+              .messageContents__rightMessageDate
+                = m.created_at.strftime("%Y年%m月%d日")
+                %br
+                = m.created_at.strftime("%H時%M分")
+          - else
+            .messageContents
+              .messageContents__leftMessage
+                = m.content
+              .messageContents__leftMessageDate
+                = m.created_at.strftime("%Y年%m月%d日")
+                %br
+                = m.created_at.strftime("%H時%M分")
+    - elsif admin_signed_in?
+      .chatContents__image
+        = image_tag @user.image.url, alt: "NoImage"
+      .chatContents__title
+        = @user.name
+        とのチャットルーム
+      .chatContents__field
+        - @messages.each do |m|
+          - if m.is_user
+            .messageContents
+              .messageContents__leftMessage
+                = m.content
+              .messageContents__leftMessageDate
+                = m.created_at.strftime("%Y年%m月%d日")
+                %br
+                = m.created_at.strftime("%H時%M分")
+          - else
+            .messageContents
+              .messageContents__rightMessage
+                = m.content
+              .messageContents__rightMessageDate
+                = m.created_at.strftime("%Y年%m月%d日")
+                %br
+                = m.created_at.strftime("%H時%M分")
+    = form_for [@room, @message] do |f|
+      .chatContents__form
+        .formField
+          = f.text_area :content, placeholder: "100文字以内で入力してください", class: "formField__text"
+      .chatContents__action
+        .actionField
+          = f.submit "メッセージを送る", class: "actionField__text"
+  = render partial: "layouts/footer"

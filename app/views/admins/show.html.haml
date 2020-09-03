@@ -23,9 +23,14 @@
         .salonInProfile
           = @admin.profile
   -if user_signed_in?
-    %ul.buttonLists
-      %li.buttonLists__message
-        メッセージを送る
+    - if @admin_ids.include?(@admin.id)
+      .messageAfter
+        = link_to "チャットルーム", room_path(current_user.rooms.find_by(admin_id: @admin.id))
+    - else
+      = form_for Room.new do |f|
+        = f.hidden_field :admin_id, :value => @admin.id
+        .messageBefore
+          = f.submit "メッセージを送る", class: "messageBefore__button"
     %ul#favoriteBtn
       = render partial: "salonfavorites/favorite", locals: { admin: @admin}
     .subscriptionButton
