@@ -1,4 +1,4 @@
-.userFavoritesMain {
+.favoritesMain {
   background-color: whitesmoke;
   .header {
     height: 150px;
@@ -94,8 +94,8 @@
       opacity: 0.4;
     }
   }
-  .userFavoritesPageHeader {
-    width: 220px;
+  .favoritesPageHeader {
+    width: 240px;
     height: 50px;
     font-size: 20px;
     background-color: whitesmoke;
@@ -105,7 +105,7 @@
     margin: 20px;
     text-align: center;
   }
-  .salonProfileContents {
+  .profileContents {
     height: 1000px;
     display: flex;
     flex-wrap: wrap;
