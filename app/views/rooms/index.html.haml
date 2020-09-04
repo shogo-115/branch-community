@@ -1,9 +1,33 @@
-.userFavoritesMain
-  = render partial: "layouts/header"
-  = render partial: "layouts/salon-menu"
-  .userMessagesPageHeader
+.messagesMain
+  - if user_signed_in?
+    = render partial: "layouts/header"
+    = render partial: "layouts/salon-menu"
+  - elsif admin_signed_in?
+    = render partial: "layouts/salon-header"
+    = render partial: "layouts/user-menu"
+  .messagesPageHeader
     メッセージ一覧
   .messageContents
-    - @rooms.each do |room|
-      = link_to "チャットルームへ", room_path(room)
+    - if user_signed_in?
+      - @rooms.each do |room|
+        = link_to room do
+          .messageContents__image
+            = image_tag room.admin.image.url, alt: "NoImage"
+          .messageContents__name
+            = room.admin.name
+          .messageContents__title
+            最新のメッセージ
+          .messageContents__message
+            = truncate(room.show_last_message, omission: '・・・', length: 20)
+    - elsif admin_signed_in?
+      - @rooms.each do |room|
+        = link_to room do
+          .messageContents__image
+            = image_tag room.user.image.url, alt: "NoImage"
+          .messageContents__name
+            = room.user.name
+          .messageContents__title
+            最新のメッセージ
+          .messageContents__message
+            = truncate(room.show_last_message, omission: '・・・', length: 20)
   = render partial: "layouts/footer"
