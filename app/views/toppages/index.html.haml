@@ -4,21 +4,7 @@
   .newSalonHeader
     新着サロン
     = link_to "もっと見る >", newsalonpage_path
-  .profile
-    - @admins.each do |admin|
-      = link_to admin do
-        = image_tag admin.image.url, alt: "NoImage"
-        %br
-        = admin.name
-        %br
-        < カテゴリー >
-        %br
-        = admin.category
-        %br
-        < 所在地 >
-        %br
-        = admin.birth_place
-
+  = render partial: "layouts/salon-profile"
   = render partial: "layouts/salon-information-menu"
   = render partial: "layouts/footer"
  

@@ -6,18 +6,16 @@
   .profileContents
     - @salonfavorites.each do |salonfavorite|
       = link_to admin_path(salonfavorite.admin.id) do
-        = image_tag salonfavorite.admin.image.url, alt: "NoImage"
-        %br
-        【サロン名】
-        %br
-        = salonfavorite.admin.name
-        %br
-        【カテゴリー】
-        %br
-        = salonfavorite.admin.category
-        %br
-        【所在地】
-        %br
-        = salonfavorite.admin.birth_place
-        %br
+        .profileContents__image
+          = image_tag salonfavorite.admin.image.url, alt: "NoImage"
+        .profileContents__name
+          = salonfavorite.admin.name
+        .profileContents__category
+          カテゴリー
+          .profileContents__category--text
+            = salonfavorite.admin.category
+        .profileContents__birth
+          所在地
+          .profileContents__birth--text
+            = salonfavorite.admin.birth_place
   = render partial: "layouts/footer"
