@@ -1,4 +1,6 @@
 .otherUserMain {
+  height: 150px;
+  margin-top: auto;
   background: image-url('other-user.jpg');
   background-size: cover;
   .header {
@@ -71,6 +73,12 @@
         }
       }
     }
+    img {
+      width: 90px;
+      height: 90px;
+      border-style: none;
+      border-radius: 30px;
+    }
   }
   .headerMenu {
     height: 80px;
@@ -109,14 +117,45 @@
       text-align: center;
     }
     .userProfileContents {
-      height: 1000px;
+      min-height: calc( 100vh - 470px);
       display: flex;
       flex-wrap: wrap;
+      &__image{
+        text-align: center;
+        img {
+          width: 80px;
+          height: 80px;
+          border: lightgreen solid 1px;
+          border-radius: 30px;
+        }
+      }
+      &__name{
+        margin-bottom: 10px;
+        padding: 5px;
+        text-shadow: 4px 4px yellow;
+        border-bottom: rgb(162, 215, 175) 1px solid;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+      &__sex{
+        border-bottom: rgb(162, 215, 175) 1px solid;
+        &--text{
+          text-align: center;
+        }
+      }
+      &__birth{
+        border-bottom: rgb(162, 215, 175) 1px solid;
+        &--text{
+          text-align: center;
+        }
+      }
       a {
-        height: 270px;
+        width: 200px;
+        height: 280px;
         text-decoration: none;
         color: black;
-        border: lightskyblue solid 1px;
+        background-color: white;
+        border: lightgreen solid 1px;
         border-radius: 10px;
         box-shadow: 6px 6px 4px lightgrey;
         padding: 10px;
@@ -124,13 +163,11 @@
         margin-left: 20px;
         margin-bottom: 10px;
       }
-      img {
-        width: 100px;
-        height: 100px;
-      }
     }
   }
   .footer {
+    height: 150px;
+    margin-top: auto;
     background-color: rgb(38, 37, 37);
     opacity: 0.8;
     &__top {

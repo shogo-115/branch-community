@@ -76,6 +76,12 @@
         }
       }
     }
+    img {
+      width: 90px;
+      height: 90px;
+      border-style: none;
+      border-radius: 30px;
+    }
   }
   .headerMenu {
     height: 80px;
@@ -124,18 +130,49 @@
       margin-left: 10px;
     }
   }
-  .profile {
+  .salonProfileContents {
     display: inline-flex;
-    font-size: 15px;
     margin-top: 30px;
     margin-bottom: 50px;
     overflow-y: hidden;
     overflow-x: scroll;
     white-space: nowrap;
     width: 100%;
+    &__image{
+      text-align: center;
+      img {
+        width: 80px;
+        height: 80px;
+        border: lightsteelblue solid 1px;
+        border-radius: 30px;
+      }
+    }
+    &__name{
+      margin-bottom: 10px;
+      padding: 5px;
+      text-shadow: 4px 4px yellow;
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+    &__category{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+      }
+    }
+    &__birth{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+      }
+    }
     a {
+      width: 200px;
+      height: 280px;
       text-decoration: none;
       color: black;
+      background-color: white;
       border: lightskyblue solid 1px;
       border-radius: 10px;
       box-shadow: 6px 6px 4px lightgrey;
@@ -144,9 +181,57 @@
       margin-left: 20px;
       margin-bottom: 10px;
     }
-    img {
-      width: 100px;
-      height: 100px;
+  }
+  .userProfileContents {
+    display: inline-flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    width: 100%;
+    &__image{
+      text-align: center;
+      img {
+        width: 80px;
+        height: 80px;
+        border: lightgreen solid 1px;
+        border-radius: 30px;
+      }
+    }
+    &__name{
+      margin-bottom: 10px;
+      padding: 5px;
+      text-shadow: 4px 4px yellow;
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+    &__sex{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+      }
+    }
+    &__birth{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+      }
+    }
+    a {
+      width: 200px;
+      height: 280px;
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      border: lightgreen solid 1px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 4px lightgrey;
+      padding: 10px;
+      margin-right: 80px;
+      margin-left: 20px;
+      margin-bottom: 10px;
     }
   }
   .salonInformationHeader {

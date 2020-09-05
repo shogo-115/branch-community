@@ -4,22 +4,7 @@
   .newUserHeader
     新着ユーザー
     = link_to "もっと見る >", newuserpage_path
-  .profile
-    - @users.each do |user|
-      = link_to user do
-        = image_tag user.image.url, alt: "NoImage"
-        %br
-        = user.name
-        %br
-        < 性別 >
-        %br
-        = user.sex
-        %br
-        < 居住地 >
-        %br
-        = user.birth_place
-
- 
+  = render partial: "layouts/user-profile"
   = render partial: "layouts/user-information-menu"
   = render partial: "layouts/footer"
  

@@ -1,15 +1,15 @@
 .userProfileContents
   - @users.each do |user|
     = link_to user do
-      = image_tag user.image.url, alt: "NoImage"
-      %br
-      = user.name
-      %br
-      < 性別 >
-      %br
-      = user.sex
-      %br
-      < 居住地 >
-      %br
-      = user.birth_place
-      %br
+      .userProfileContents__image
+        = image_tag user.image.url, alt: "NoImage"
+      .userProfileContents__name
+        = user.name
+      .userProfileContents__sex
+        性別
+        .userProfileContents__sex--text
+          = user.sex
+      .userProfileContents__birth
+        居住地
+        .userProfileContents__birth--text
+          = user.birth_place
