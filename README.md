@@ -89,6 +89,12 @@
 |email|string|null: false|
 |image|string|null: false|
 |password|string|null: false|
+### Association
+- has_many :salonfavorites, dependent: :destroy
+- has_many :salonfavorites, through: :salonfavorites, source: :salon
+- has_many :userfavorites, dependent: :destroy
+- has_many :userfavorites, through: :favorites, source: :salon
+- has_many :rooms
 
 ## salonsテーブル
 |Column|Type|Option|
@@ -100,3 +106,46 @@
 |email|string|null: false|
 |image|string|null: false|
 |password|string|null: false|
+### Association
+- has_many :salonfavorites, dependent: :destroy
+- has_many :salonfavorites, through: :salonfavorites, source: :user
+- has_many :userfavorites, dependent: :destroy
+- has_many :userfavorites, through: :favorites, source: :user
+- has_many :rooms
+
+## salonfavoritesテーブル
+|Column|Type|Option|
+|------|----|------|
+|user|references|null: false|
+|salon|references|null: false|
+### Association
+- belongs_to :user
+- belongs_to :salon
+
+## userfavoritesテーブル
+|Column|Type|Option|
+|------|----|------|
+|salon|references|null: false|
+|user|references|null: false|
+### Association
+- belongs_to :salon
+- belongs_to :user
+
+## roomsテーブル
+|Column|Type|Option|
+|------|----|------|
+|salon|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+### Association
+- has_many :messages
+- belongs_to :user
+- belongs_to :salon
+
+## messagesテーブル
+|Column|Type|Option|
+|------|----|------|
+|room|references|null: false, foreign_key: true|
+|is_user|boolean|
+|content|text|
+### Association
+- belongs_to :room
