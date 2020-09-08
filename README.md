@@ -5,7 +5,7 @@
   オンラインサロンのマッチングアプリ
 
 # 使用環境
-  Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code<br>
+  Ruby/Ruby on Rails/Haml/Scss/MySQL/Github/heroku/Visual Studio Code<br>
   <br>
   
 # :ledger: Deploy - 本番環境
