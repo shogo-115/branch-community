@@ -30,4 +30,5 @@
             最新のメッセージ
           .messageContents__message
             = truncate(room.show_last_message, omission: '・・・', length: 20)
+  = render partial: "layouts/room-pagenate"
   = render partial: "layouts/footer"

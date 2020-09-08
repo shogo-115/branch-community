@@ -2,7 +2,7 @@ class UserfavoritesController < ApplicationController
   before_action :set_user, only: [:create, :destroy]
 
   def index
-    @userfavorites = Userfavorite.where(admin_id: current_admin.id)
+    @userfavorites = Userfavorite.where(admin_id: current_admin.id).page(params[:page]).per(15)
   end
 
   def create

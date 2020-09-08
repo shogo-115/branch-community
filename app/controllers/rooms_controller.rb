@@ -2,9 +2,9 @@ class RoomsController < ApplicationController
   
   def index
     if user_signed_in?
-      @rooms = current_user.rooms
+      @rooms = current_user.rooms.page(params[:page]).per(15)
     elsif admin_signed_in?
-      @rooms = current_admin.rooms
+      @rooms = current_admin.rooms.page(params[:page]).per(15)
     end
   end
   

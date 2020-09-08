@@ -2,7 +2,7 @@ class SalonfavoritesController < ApplicationController
   before_action :set_admin, only: [:create, :destroy]
 
   def index
-    @salonfavorites = Salonfavorite.where(user_id: current_user.id)
+    @salonfavorites = Salonfavorite.where(user_id: current_user.id).page(params[:page]).per(15)
   end
 
   def create
