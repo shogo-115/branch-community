@@ -1,7 +1,7 @@
 class FoodpagesController < ApplicationController
 
   def index
-    @admins = Admin.where(category: "フード・グルメ")
+    @admins = Admin.where(category: "フード・グルメ").page(params[:page]).per(15)
   end
 
 end
