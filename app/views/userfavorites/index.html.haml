@@ -18,5 +18,7 @@
           居住地
           .profileContents__birth--text
             = userfavorite.user.birth_place
+  .back
+    = link_to "トップページに戻る", salontoppage_path
   = render partial: "layouts/user-favorites-pagenate"
   = render partial: "layouts/footer"

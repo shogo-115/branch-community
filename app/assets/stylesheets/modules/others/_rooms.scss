@@ -87,6 +87,22 @@
       }
     }
   }
+  .back {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    a {
+      height: 30px;
+      width: 100px;
+      font-size: 18px;
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      background-color: white;
+      opacity: 0.7;
+    }
+  }
   .footer {
     background-color: rgb(38, 37, 37);
     opacity: 0.8;
