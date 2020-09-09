@@ -30,5 +30,11 @@
             最新のメッセージ
           .messageContents__message
             = truncate(room.show_last_message, omission: '・・・', length: 20)
+  - if user_signed_in?
+    .back
+      = link_to "トップページに戻る", root_path
+  - elsif admin_signed_in?
+    .back
+      = link_to "トップページに戻る", salontoppage_path
   = render partial: "layouts/room-pagenate"
   = render partial: "layouts/footer"

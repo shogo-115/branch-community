@@ -26,7 +26,6 @@
     - if @user_ids.include?(@user.id)
       .messageAfter
         = link_to "チャットルーム", room_path(current_admin.rooms.find_by(user_id: @user.id))
-      %br
     - else
       = form_for Room.new do |f|
         = f.hidden_field :user_id, :value => @user.id
@@ -34,6 +33,10 @@
           = f.submit "メッセージを送る", class: "messageBefore__button"
     %ul#favoriteBtn
       = render partial: "userfavorites/favorite", locals: { user: @user}
+    .back
+      = link_to "トップページに戻る", salontoppage_path
     = render partial: "layouts/footer"
   -else
+    .back
+      = link_to "トップページに戻る", salontoppage_path
     = render partial: "layouts/footer"

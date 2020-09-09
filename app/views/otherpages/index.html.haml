@@ -5,5 +5,7 @@
     .otherUserPageHeader
       その他
     = render partial: "layouts/user-profile"
+    .back
+      = link_to "トップページに戻る", salontoppage_path
     = render partial: "layouts/user-pagenate"
     = render partial: "layouts/footer"

@@ -35,6 +35,10 @@
       = render partial: "salonfavorites/favorite", locals: { admin: @admin}
     .subscriptionButton
       申し込む！
+    .back
+      = link_to "トップページに戻る", root_path
     = render partial: "layouts/footer"
   -else
+    .back
+      = link_to "トップページに戻る", root_path
     = render partial: "layouts/footer"
