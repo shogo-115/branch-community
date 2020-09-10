@@ -1,0 +1,21 @@
+.salonProfile
+  %ul.profileLists
+    %li.profileLists__image
+      = image_tag @admin.image.url, alt: "NoImage"
+    %li.profileLists__name
+      .salonName
+        = @admin.name
+    %li.profileLists__category
+      カテゴリー
+      .salonCategory
+        = @admin.category
+    %li.profileLists__birth
+      所在地
+      .salonBirth
+        = @admin.birth_place
+    %li.profileLists__profile
+      プロフィール
+      .salonInProfile
+        = @admin.profile
+    = link_to(admin_requests_path(@admin), method: :post) do
+      申込

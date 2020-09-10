@@ -34,7 +34,7 @@
     %ul#favoriteBtn
       = render partial: "salonfavorites/favorite", locals: { admin: @admin}
     .subscriptionButton
-      申し込む！
+      = link_to "申し込む！", admin_request_path(admin_id: @admin.id)
     .back
       = link_to "トップページに戻る", root_path
     = render partial: "layouts/footer"

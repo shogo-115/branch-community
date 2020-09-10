@@ -20,6 +20,16 @@ Rails.application.routes.draw do
   resources :admins do
     resources :salonfavorites , only: [:index, :create, :destroy]
   end
+
+  resources :admins do
+    resources :requests , only: [:index, :show, :create, :destroy ] do
+      collection do
+        get 'new_done', to: 'requests#new_done'
+        get 'destroy_done', to: 'requests#destroy_done'
+      end
+    end
+  end
+
   resources :admins, only: [:show, :edit, :update]
   
   resources :rooms, only: [:index, :show, :create] do

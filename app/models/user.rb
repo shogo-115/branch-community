@@ -8,7 +8,11 @@ class User < ApplicationRecord
   has_many :salonfavorites, through: :salonfavorites, source: :admin
   has_many :userfavorites, dependent: :destroy
   has_many :userfavorites, through: :favorites, source: :admin
+  
   has_many :rooms
+  
+  has_many :requests, dependent: :destroy
+  has_many :requests, through: :requests, source: :admin
 
   validates :name, :sex, :birth_date, :birth_place, :profile, presence: true
   validates :image, presence: {message:"を1枚追加してください"}
