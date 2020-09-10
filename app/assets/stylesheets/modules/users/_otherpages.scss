@@ -163,6 +163,10 @@
         margin-left: 20px;
         margin-bottom: 10px;
       }
+      a:hover {
+        border: green solid 3px;
+        transition: 0.1s ease-in-out;
+      }
     }
   }
   .back {
