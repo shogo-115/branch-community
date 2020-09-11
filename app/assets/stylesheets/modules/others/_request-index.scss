@@ -1,4 +1,5 @@
-.salonMain {
+.requestIndexMain {
+  min-height: 100vh;
   background-color: whitesmoke;
   .header {
     height: 150px;
@@ -100,135 +101,81 @@
       opacity: 0.4;
     }
   }
-  .salonProfileHeader {
-    width: 200px;
-    font-size: 20px;
-    border-bottom: lightblue solid 2px;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-  }
-  .salonProfile {
-    width: 500px;
-    height: 900px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 10px 10px 4px lightgrey;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    .profileLists {
-      &__image {
-        text-align: center;
-        img {
-          width: 200px;
-          height: 200px;
-        }
-      }
-      &__name {
-        font-size: 16px;
-        padding-left: 20px;
-        margin-bottom: 15px;
-        border-bottom: lightsteelblue solid 1px;
-        .salonName {
-          font-size: 20px;
-          padding-left: 30px;
-        }
-      }
-      &__category {
-        font-size: 16px;
-        padding-left: 20px;
-        margin-bottom: 15px;
-        border-bottom: lightsteelblue solid 1px;
-        .salonCategory {
-          font-size: 20px;
-          padding-left: 30px;
-        }
-      }
-      &__birth {
-        font-size: 16px;
-        padding-left: 20px;
-        margin-bottom: 15px;
-        border-bottom: lightsteelblue solid 1px;
-        .salonBirth {
-          font-size: 20px;
-          padding-left: 30px;
-        }
-      }
-      &__profile {
-        font-size: 16px;
-        padding-left: 20px;
-        .salonInProfile {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-  .messageBefore {
-    width: 250px;
-    height: 60px;
-    background-color: white;
-    border-style: none;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
-    &__button{
-      font-size: 25px;
-      background-color: white;
-      border-style: none;
-      color: rgb(96, 218, 240);
-      cursor: pointer;
-    }
-  }
-  .messageAfter {
-    width: 250px;
-    height: 60px;
-    font-size: 25px;
-    background-color: lightblue;
-    border-style: none;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
-  .subscriptionAlready {
-    width: 150px;
+  .requestPageHeader {
+    width: 240px;
     height: 50px;
-    font-size: 18px;
-    background-color:lightgray;
-    border-style: none;
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: lightskyblue solid 2px;
     border-radius: 10px;
     padding: 10px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 20px;
     text-align: center;
-    a {
-      text-decoration: none;
-      color: white;
-    }
   }
-  .subscriptionButton {
-    width: 250px;
-    height: 60px;
-    font-size: 25px;
-    color: white;
-    background-color: pink;
-    border-style: none;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-align: center;
+  .profileContents {
+    min-height: calc( 100vh - 470px);
+    display: flex;
+    flex-wrap: wrap;
+    &__image{
+      text-align: center;
+      img {
+        width: 80px;
+        height: 80px;
+        border: lightskyblue solid 1px;
+        border-radius: 30px;
+      }
+    }
+    &__name{
+      margin-bottom: 10px;
+      padding: 5px;
+      text-shadow: 4px 4px yellow;
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      word-wrap: break-word;
+      white-space: normal;
+    }
+    &__sex{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+      }
+    }
+    &__category{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+      }
+    }
+    &__birth{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+      }
+    }
+    &__email{
+      border-bottom: rgb(162, 215, 175) 1px solid;
+      &--text{
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
+      }
+    }
     a {
+      width: 200px;
+      height: 320px;
       text-decoration: none;
-      color: white;
+      color: black;
+      background-color: white;
+      border: lightskyblue solid 1px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 4px lightgrey;
+      padding: 10px;
+      margin-right: 80px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    a:hover {
+      border: blue solid 3px;
+      transition: 0.1s ease-in-out;
     }
   }
   .back {
@@ -248,6 +195,8 @@
     }
   }
   .footer {
+    height: 150px;
+    margin-top: auto;
     background-color: rgb(38, 37, 37);
     opacity: 0.8;
     &__top {
@@ -283,4 +232,4 @@
       text-align: center;
     }
   }
-}
+} 

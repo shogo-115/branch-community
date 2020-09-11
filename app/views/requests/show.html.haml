@@ -1,21 +1,43 @@
-.salonProfile
-  %ul.profileLists
-    %li.profileLists__image
-      = image_tag @admin.image.url, alt: "NoImage"
-    %li.profileLists__name
-      .salonName
-        = @admin.name
-    %li.profileLists__category
-      カテゴリー
-      .salonCategory
-        = @admin.category
-    %li.profileLists__birth
-      所在地
-      .salonBirth
-        = @admin.birth_place
-    %li.profileLists__profile
-      プロフィール
-      .salonInProfile
-        = @admin.profile
+.requestMain
+  = render partial: "layouts/header"
+  .requestHeader
+    サロン申込内容確認
+  .requestContents
+    %ul.profileLists
+      %li.profileLists__image
+        = image_tag @admin.image.url, alt: "NoImage"
+      %li.profileLists__name
+        .salonName
+          = @admin.name
+      %li.profileLists__category
+        カテゴリー
+        .salonCategory
+          = @admin.category
+      %li.profileLists__birth
+        所在地
+        .salonBirth
+          = @admin.birth_place
+      %li.profileLists__profile
+        プロフィール
+        .salonProfile
+          = @admin.profile
+  %ul.cautionLists
+    %li.cautionLists__title
+      < 注意事項 >
+      %span 確認必須
+    %li.cautionLists__text
+      ・オンラインサロンにメールアドレスを含むプロフィール情報が送られます
+    %li.cautionLists__text
+      ・申込後はオンラインサロン側より登録メールアドレス宛に連絡がございますので、
+      %br
+      　お待ちください
+    %li.cautionLists__text
+      ・申込後は特別な理由なき限りは、キャンセルは遠慮頂きますようお願いします
+    %li.cautionLists__text
+      ・オンラインサロンより入会に関して追加の確認ある場合がございますので、
+      %br
+      　ご容赦ください
+  .requestButton
     = link_to(admin_requests_path(@admin), method: :post) do
-      申込
+      申込を確定する
+  = render partial: "layouts/footer"

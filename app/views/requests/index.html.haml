@@ -1,1 +1,54 @@
-test
+- if user_signed_in?
+  .requestIndexMain
+    = render partial: "layouts/header"
+    = render partial: "layouts/salon-menu"
+    .requestPageHeader
+      申込済みのサロン
+    .profileContents
+      - @requests.each do |request|
+        = link_to admin_path(request.admin.id) do
+          .profileContents__image
+            = image_tag request.admin.image.url, alt: "NoImage"
+          .profileContents__name
+            = request.admin.name
+          .profileContents__sex
+            カテゴリー
+          .profileContents__sex--text
+            = request.admin.category
+          .profileContents__birth
+            所在地
+          .profileContents__birth--text
+            = request.admin.birth_place
+    .back
+      = link_to "トップページに戻る", root_path
+    = render partial: "layouts/user-request-pagenate"
+    = render partial: "layouts/footer"
+- elsif admin_signed_in?
+  .requestIndexMain
+    = render partial: "layouts/salon-header"
+    = render partial: "layouts/user-menu"
+    .requestPageHeader
+      申込済みのユーザー
+    .profileContents
+      - @requests.each do |request|
+        = link_to user_path(request.user.id) do
+          .profileContents__image
+            = image_tag request.user.image.url, alt: "NoImage"
+          .profileContents__name
+            = request.user.name
+          .profileContents__sex
+            性別
+            .profileContents__sex--text
+              = request.user.sex
+          .profileContents__birth
+            居住地
+            .profileContents__birth--text
+              = request.user.birth_place
+          .profileContents__email
+            メールアドレス
+            .profileContents__email--text
+              = request.user.email
+    .back
+      = link_to "トップページに戻る", salontoppage_path
+    = render partial: "layouts/salon-request-pagenate"
+    = render partial: "layouts/footer"

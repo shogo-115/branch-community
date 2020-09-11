@@ -1,15 +1,12 @@
 class RequestsController < ApplicationController
-  before_action :set_admin, only: [:show, :create, :destroy]
+  before_action :set_admin, only: [:create, :destroy, :show, :new_done, :destroy_done]
 
   def index
     if user_signed_in?
-      @requests = Request.where(user_id: current_user.id)
+      @requests = Request.where(user_id: current_user.id).page(params[:page]).per(15)
     elsif admin_signed_in?
-      @requests = Request.where(admin_id: current_admin.id)
+      @requests = Request.where(admin_id: current_admin.id).page(params[:page]).per(15)
     end
-  end
-
-  def show
   end
 
   def create
@@ -28,6 +25,9 @@ class RequestsController < ApplicationController
     )
     @request.destroy
     redirect_to action: 'destroy_done'
+  end
+
+  def show
   end
 
   def new_done

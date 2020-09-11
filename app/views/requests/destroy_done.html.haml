@@ -1,1 +1,26 @@
-申込みをキャンセルしました！
+.requestMain
+  = render partial: "layouts/header"
+  .requestHeader
+    サロンの申込をキャンセルしました！
+  .requestContents
+    %ul.profileLists
+      %li.profileLists__image
+        = image_tag @admin.image.url, alt: "NoImage"
+      %li.profileLists__name
+        .salonName
+          = @admin.name
+      %li.profileLists__category
+        カテゴリー
+        .salonCategory
+          = @admin.category
+      %li.profileLists__birth
+        所在地
+        .salonBirth
+          = @admin.birth_place
+      %li.profileLists__profile
+        プロフィール
+        .salonProfile
+          = @admin.profile
+  .back
+    = link_to "トップページに戻る", root_path
+  = render partial: "layouts/footer"
