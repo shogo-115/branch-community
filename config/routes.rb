@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   end
 
   resources :admins do
-    resources :requests , only: [:index, :show, :create, :destroy ] do
+    resources :requests , only: [:index, :destroy, :show, :create] do
       collection do
         get 'new_done', to: 'requests#new_done'
         get 'destroy_done', to: 'requests#destroy_done'

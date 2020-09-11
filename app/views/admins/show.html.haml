@@ -33,8 +33,13 @@
           = f.submit "メッセージを送る", class: "messageBefore__button"
     %ul#favoriteBtn
       = render partial: "salonfavorites/favorite", locals: { admin: @admin}
-    .subscriptionButton
-      = link_to "申し込む！", admin_request_path(admin_id: @admin.id)
+    - if Request.find_by(user_id: current_user.id, admin_id: @admin.id)
+      .subscriptionAlready
+        = link_to(admin_request_path(@admin, @admin.id), method: :delete) do
+          申込キャンセル
+    - else
+      .subscriptionButton
+        = link_to "申し込む！", admin_request_path(admin_id: @admin.id)
     .back
       = link_to "トップページに戻る", root_path
     = render partial: "layouts/footer"
