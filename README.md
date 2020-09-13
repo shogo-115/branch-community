@@ -41,33 +41,34 @@
   開発に至った。<br>
 
 # 実装機能
-  ・新規会員登録<br>
-  ・登録情報編集機能<br>
-  ・お気に入り機能<br>
-  ・ユーザー一覧表示機能<br>
-  ・お気に入り機能<br>
-  ・DM機能<br>
-  ・サロン申込機能<br>
+・　新規会員登録<br>
+・　登録情報編集機能<br>
+・　お気に入り機能<br>
+・　ユーザー一覧表示機能<br>
+・　お気に入り機能<br>
+・　ダイレクトメッセージ機能<br>
+・　サロン申込機能<br>
   
-# :iphone: DEMO -  使用方法
+# :iphone: DEMO -  機能紹介
   ## 【トップページ】
   <div align="center">
   <img src="https://user-images.githubusercontent.com/67040383/90971714-9861a500-e54d-11ea-948a-6c98e544c85d.png" alt="Image from Gyazo" width="80%">
   </div>
   
   
-  ## 【ユーザー／オンラインサロン登録ページ】<br>
+  ## 【ダイレクトメッセージ機能】<br>
   <div align="center">
-  <img src="https://user-images.githubusercontent.com/67040383/90971742-ea0a2f80-e54d-11ea-94de-effaa9e319a0.gif" alt="Image from Gyazo" width="80%">
+  <img src="" alt="Image from Gyazo" width="80%">
   </div>
   
   ### 【お気に入り機能】<br>
   <div align="center">
-  <img src="https://user-images.githubusercontent.com/67040383/90971972-fee7c280-e54f-11ea-8ca3-8d324491a7ba.gif" alt="Image from Gyazo" width="80%">
+  <img src="" alt="Image from Gyazo" width="80%">
   </div>
   
-  ## 【ユーザー／オンラインサロン詳細ページ】<br>
+  ## 【サロン申込／キャンセル機能】<br>
   <div align="center">
+  <img src="" alt="Image from Gyazo" width="80%">
   </div>
   
 # Device - 工夫したポイント
@@ -77,7 +78,6 @@
   身近となるように改良していきます。<br>
   
 # :computer: To be implemented - 実装予定
-・　チャットルーム機能<br>
 ・　おすすめユーザー（オンラインサロン）表示機能<br>
 ・　アクティブユーザー表示機能<br>
 ・　ユーザー（オンラインサロン）ランキング機能<br>
