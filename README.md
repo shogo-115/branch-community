@@ -55,20 +55,19 @@
   <img src="https://user-images.githubusercontent.com/67040383/90971714-9861a500-e54d-11ea-948a-6c98e544c85d.png" alt="Image from Gyazo" width="80%">
   </div>
   
-  
   ## 【ダイレクトメッセージ機能】<br>
   <div align="center">
-  <img src="" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/93010539-c07e7a00-f5c8-11ea-89ed-ed2ad0573932.gif" alt="Image from Gyazo" width="80%">
   </div>
   
   ### 【お気に入り機能】<br>
   <div align="center">
-  <img src="" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/93010551-e441c000-f5c8-11ea-8bd8-6e5a16b8dede.gif" alt="Image from Gyazo" width="80%">
   </div>
   
   ## 【サロン申込／キャンセル機能】<br>
   <div align="center">
-  <img src="" alt="Image from Gyazo" width="80%">
+  <img src="https://user-images.githubusercontent.com/67040383/93010565-02a7bb80-f5c9-11ea-82d6-0593d88d26e4.gif" alt="Image from Gyazo" width="80%">
   </div>
   
 # Device - 工夫したポイント
