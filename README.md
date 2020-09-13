@@ -1,5 +1,5 @@
 # Application Name - アプリ名
-　Branch-Community
+  Branch-Community
 
 # newRead - 概要
   オンラインサロンのマッチングアプリ
@@ -102,6 +102,8 @@
 - has_many :userfavorites, dependent: :destroy
 - has_many :userfavorites, through: :favorites, source: :salon
 - has_many :rooms
+- has_many :requests, dependent: :destroy
+- has_many :requests, through: :requests, source: :salon
 
 ## salonsテーブル
 |Column|Type|Option|
@@ -119,6 +121,17 @@
 - has_many :userfavorites, dependent: :destroy
 - has_many :userfavorites, through: :favorites, source: :user
 - has_many :rooms
+- has_many :requests, dependent: :destroy
+- has_many :requests, through: :requests, source: :user
+
+## requestsテーブル
+|Column|Type|Option|
+|------|----|------|
+|salon|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+### Association
+- belongs_to :salon
+- belongs_to :user
 
 ## salonfavoritesテーブル
 |Column|Type|Option|
