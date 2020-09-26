@@ -9,12 +9,10 @@ class MessagesController < ApplicationController
       @message.is_user = false
     end
     @message.room_id = @room.id
-    if @message.save
-      redirect_to room_url(@room)
-    else
-      flash[:alert] = 'メッセージを100文字以内で入力してください。'
-      redirect_to room_url(@room)
-    end
+    @message.save
+      respond_to do |format|
+        format.json
+      end
   end
 
   private

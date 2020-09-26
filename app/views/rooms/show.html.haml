@@ -18,17 +18,13 @@
               .messageContents__rightMessage
                 = m.content
               .messageContents__rightMessageDate
-                = m.created_at.strftime("%Y年%m月%d日")
-                %br
-                = m.created_at.strftime("%H時%M分")
+                = m.created_at.strftime("%Y年%m月%d日 %H時%M分")
           - else
             .messageContents
               .messageContents__leftMessage
                 = m.content
               .messageContents__leftMessageDate
-                = m.created_at.strftime("%Y年%m月%d日")
-                %br
-                = m.created_at.strftime("%H時%M分")
+                = m.created_at.strftime("%Y年%m月%d日 %H時%M分")
     - elsif admin_signed_in?
       .chatContents__image
         = link_to (image_tag @user.image.url), user_path(@user.id), alt: "NoImage"
@@ -42,17 +38,13 @@
               .messageContents__leftMessage
                 = m.content
               .messageContents__leftMessageDate
-                = m.created_at.strftime("%Y年%m月%d日")
-                %br
-                = m.created_at.strftime("%H時%M分")
+                = m.created_at.strftime("%Y年%m月%d日 %H時%M分")
           - else
             .messageContents
               .messageContents__rightMessage
                 = m.content
               .messageContents__rightMessageDate
-                = m.created_at.strftime("%Y年%m月%d日")
-                %br
-                = m.created_at.strftime("%H時%M分")
+                = m.created_at.strftime("%Y年%m月%d日 %H時%M分")
     = form_for [@room, @message] do |f|
       .chatContents__form
         .formField
