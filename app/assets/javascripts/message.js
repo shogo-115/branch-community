@@ -10,7 +10,7 @@ $(function(){
         </div>
       </div>`
       return html;
-    };
+  }
 
   $('.new_message').on('submit', function(e){
     e.preventDefault();
@@ -27,13 +27,14 @@ $(function(){
     .done(function(data){
       let html = buildHTML(data);
       $('.chatContents__field').append(html);
-      $('form')[0].reset();
       $('.chatContents__field').animate({ scrollTop: $('.chatContents__field')[0].scrollHeight});
-      $('.actionField__text').prop('disabled', false);
+      $('form')[0].reset();
     })
     .fail(function() {
       alert("メッセージを100文字以内で入力してください");
+    })
+    .always(function(){
       $('.actionField__text').prop('disabled', false);
-    });
+    })
   });
 });
